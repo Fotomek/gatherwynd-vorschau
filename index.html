@@ -130,11 +130,11 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
 .nils-kicker{font:700 13px/1.2 var(--font-text);letter-spacing:.18em;text-transform:uppercase;color:var(--akzent);margin:0 0 12px}
 .nils-film h2{font-size:clamp(34px,4vw,52px);line-height:1.08;margin:0 0 14px;text-wrap:balance}
 .nils-lead{max-width:36em;margin:0;color:var(--ink-2)}
-.nils-film-buehne{display:flex;align-items:center;gap:18px}
-.nils-portrait{margin:0;width:min(340px,34vw);flex:0 0 auto}
+.nils-film-buehne{display:flex;flex-direction:column;align-items:flex-start;width:min(340px,34vw);max-width:100%;min-width:0}
+.nils-portrait{margin:0;width:100%}
 .nils-portrait video{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#141615;border-radius:18px;display:block;box-shadow:var(--schatten)}
-.stimme-label{display:inline-flex;align-items:center;gap:8px;margin:0;max-width:220px;font:600 10.5px/1.35 "Archivo LP",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.92);padding:7px 10px;border-radius:2px;background:rgba(17,18,19,.82)}
-.stimme-label:before{content:"";width:14px;height:1px;background:#E2C541;flex:0 0 auto}
+.stimme-label{display:inline-flex;align-items:center;gap:8px;margin:10px 0 0;padding:0;max-width:none;width:max-content;white-space:nowrap;hyphens:none;-webkit-hyphens:none;overflow-wrap:normal;word-break:keep-all;font:600 10.5px/1.35 "Archivo LP",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);background:none;border-radius:0}
+.stimme-label:before{content:"";width:14px;height:1px;background:#E2C541;opacity:.9;flex:0 0 auto}
 .gw-anfragen{background:#fff;padding:72px 0 80px;scroll-margin-top:96px;overflow-wrap:break-word}
 .gw-anfragen .wrap{max-width:880px}
 .gw-kopf{margin-bottom:22px}
@@ -185,8 +185,7 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
   .nils-film-grid{grid-template-columns:1fr;justify-items:center;gap:22px}
   .nils-film-text{text-align:center}
   .nils-lead{margin-inline:auto}
-  .nils-film-buehne{flex-direction:column;align-items:center}
-  .nils-portrait{width:min(300px,calc(100vw - 48px))}
+  .nils-film-buehne{width:min(300px,calc(100vw - 48px));align-items:flex-start}
   .gw-anfragen{padding:48px 0 56px}
   .gw-tabs{grid-template-columns:1fr 1fr}
   .gw-tab{min-height:76px}
@@ -194,7 +193,7 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
   .gw-senden{width:100%}
 }
 @media (max-width:420px){
-  .nils-portrait{width:min(280px,calc(100vw - 40px))}
+  .nils-film-buehne{width:min(280px,calc(100vw - 40px))}
 }
 
 </style></head>
@@ -223,9 +222,8 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
             <source src="assets/interview/nils-interview-b3-web.mp4" type="video/mp4">
             <track kind="subtitles" src="assets/interview/untertitel-de.vtt" srclang="de" label="Deutsch" default>
           </video>
-          <figcaption class="gw-sr">Interview mit Nils. Untertitel auf Deutsch.</figcaption>
+          <figcaption class="stimme-label">Interviewer-Stimme KI-generiert</figcaption>
         </figure>
-        <p class="stimme-label">Interviewer-Stimme KI-generiert</p>
       </div>
     </div>
   </div>

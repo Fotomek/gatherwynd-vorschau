@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Gatherwynd · Voransicht Retribalize-Mix (06.11.2026)</title>
+<style>
+@font-face{font-family:"Archivo LP";src:url(assets/fonts/archivo-latin.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Archivo LP";src:url(assets/fonts/archivo-latinext.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0100-02FF,U+1E00-1EFF}
+@font-face{font-family:"Fraunces LP";src:url(assets/fonts/fraunces-latin.woff2) format("woff2");font-weight:480;font-style:normal;font-display:swap}
+@font-face{font-family:"Fraunces LP";src:url(assets/fonts/fraunces-italic-latin.woff2) format("woff2");font-weight:350;font-style:italic;font-display:swap}
+:root{--ink:#141615;--ink-2:#4A4E4B;--ink-3:#6B706C;--weiss:#FFFFFF;--flaeche-2:#F7F8F6;--linie:#DDE0DC;
+ --nacht:#111213;--nacht-2:#1A1C1B;--hellgrau:#ECEDEA;--wald:#1D5C3A;--orange:#D2401A;--orange-hell:#FF6B3D;--gold:#E2C541;
+ --kopf:"Fraunces LP",Georgia,serif;--text:"Archivo LP",system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0}
+body{font:17px/1.6 var(--text);color:var(--ink);background:var(--weiss)}
+a{color:inherit}
+.band{position:fixed;inset:0 0 auto 0;z-index:30;background:var(--wald);color:#fff;font:600 12.5px/1 system-ui,sans-serif;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.nav{position:absolute;top:26px;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,4vw,56px)}
+.nav .logo{height:72px;width:auto;display:block}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+.nav li a{color:#fff;text-decoration:none;font-size:15px;opacity:.92}
+.nav .klein{background:#fff;color:var(--ink);padding:10px 18px;border-radius:4px;font-weight:600;opacity:1}
+.burger{display:none;width:30px;height:20px;border-top:2px solid #fff;border-bottom:2px solid #fff;position:relative}
+.burger:after{content:"";position:absolute;left:0;right:0;top:7px;border-top:2px solid #fff}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;color:#fff;text-align:center;background:var(--nacht)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .hoch{display:none}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,19,.62) 0%,rgba(17,18,19,.42) 38%,rgba(17,18,19,.58) 72%,rgba(17,18,19,.88) 100%)}
+.hero-inhalt{position:relative;z-index:2;max-width:900px;padding:120px 24px 90px}
+.kicker{font:600 13px/1 var(--text);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+.hero h1{font:480 clamp(46px,6.6vw,92px)/1.02 var(--kopf);letter-spacing:-.015em;margin:0 0 22px;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:350}
+.hero p.sub{font-size:clamp(17px,1.5vw,20px);line-height:1.5;max-width:620px;margin:0 auto 30px;opacity:.95}
+.textlink{display:inline-flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-size:17px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.35);margin-bottom:22px}
+.knoepfe{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.knopf{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 24px;border-radius:4px;font:600 16px/1.2 var(--text);text-decoration:none;border:1px solid transparent}
+.k-orange{background:var(--orange-hell);color:var(--nacht)}
+.k-weiss{background:#fff;color:var(--ink)}
+.k-orange-hell{background:var(--orange);color:#fff}
+.k-rand{border-color:var(--ink);color:var(--ink);background:transparent}
+.pfeil{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;width:18px;height:18px;border-right:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(255,255,255,.7);rotate:45deg}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.dunkel{background:var(--nacht);color:var(--hellgrau);padding:110px 0}
+.dunkel h2,.hell h2,.orte h2,.moment h2{font:480 clamp(34px,4.2vw,58px)/1.05 var(--kopf);letter-spacing:-.01em;margin:0 0 14px}
+.dunkel .lead{color:#B9BCB8;max-width:560px;margin:0 0 60px}
+.schritte{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
+.schritte:before{content:"";position:absolute;left:4%;right:4%;top:56px;border-top:1px solid rgba(226,197,65,.55)}
+.schritt{background:var(--nacht-2);border:1px solid #2A2D2B;border-radius:6px;padding:34px 28px 30px;position:relative}
+.schritt .ic{width:44px;height:44px;margin-bottom:26px}
+.schritt h3{font:480 26px/1.15 var(--kopf);margin:0 0 12px;color:#fff}
+.schritt p{margin:0;color:#B9BCB8;font-size:16px}
+.schritt .punkt{position:absolute;right:-20px;top:50px;width:12px;height:12px;border-radius:50%;background:var(--gold);z-index:2}.schritt:last-child .punkt{display:none}
+/* Dezentes Bildlabel: Archivo Versalien, halbtransparent, feine goldene Linie */
+.bildlabel{
+  position:absolute;z-index:3;left:10px;bottom:10px;
+  font:600 10.5px/1.35 var(--text);letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  padding:7px 10px;border-radius:2px;
+  background:linear-gradient(90deg,rgba(17,18,19,.58) 0%,rgba(17,18,19,.32) 100%);
+  display:inline-flex;align-items:center;gap:8px;max-width:calc(100% - 20px);
+  pointer-events:none;white-space:normal;overflow:visible;hyphens:manual
+}
+.bildlabel:before{content:"";width:14px;height:1px;background:var(--gold);opacity:.9;flex:0 0 auto}
+.bildlabel.oben{bottom:auto;top:10px}
+.hell{padding:110px 0;background:var(--weiss)}
+.hell .lead,.orte .lead,.moment .lead{color:var(--ink-2);max-width:620px;margin:0 0 50px}
+.wege{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.weg{border:1px solid var(--linie);border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.weg figure,.karte figure{margin:0;position:relative;overflow:hidden}
+.weg figure{aspect-ratio:16/10}
+.weg img,.karte img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.weg figcaption{position:absolute;left:18px;bottom:14px;color:#fff;font:italic 350 30px/1.1 var(--kopf);text-shadow:0 2px 16px rgba(0,0,0,.45);z-index:2}
+.weg .inhalt{padding:28px 28px 32px;display:flex;flex-direction:column;gap:14px;flex:1}
+.weg .marke{font:600 12.5px/1 var(--text);letter-spacing:.18em;text-transform:uppercase;color:var(--wald)}
+.weg h3{font:480 32px/1.1 var(--kopf);margin:0}
+.weg p{margin:0;color:var(--ink-2)}
+.weg .klein{font-size:14px;color:var(--ink-3)}
+.weg .knopf{align-self:flex-start;margin-top:auto}
+/* Bildband */
+.bandbilder{background:var(--nacht);padding:28px 0 36px}
+.bandbilder .raster{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:stretch}
+.bandbild{position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:var(--nacht-2);box-shadow:inset 0 0 0 1px #2A2D2B}
+.bandbild figure{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;margin:0;overflow:hidden}
+.bandbild img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+/* Moment / Terrasse */
+.moment{padding:100px 0;background:var(--flaeche-2)}
+.moment .raster{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center}
+.moment figure{margin:0;position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+.moment img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.moment h2{margin-bottom:18px}
+.moment p{color:var(--ink-2);margin:0 0 18px}
+/* Orte */
+.orte{padding:110px 0;background:var(--weiss)}
+.orte-raster{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.orte-zwei{grid-template-columns:1fr 1fr}
+.karte{border:1px solid var(--linie);border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.karte figure{position:relative;aspect-ratio:4/5;overflow:hidden}
+.karte .inhalt{padding:18px 18px 22px}
+.karte .marke{font:600 11.5px/1 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--wald)}
+.karte h3{font:480 22px/1.15 var(--kopf);margin:8px 0 6px}
+.karte p{margin:0;color:var(--ink-2);font-size:15px}
+/* Nils */
+.nils{background:var(--flaeche-2);padding:100px 0}
+.nils .raster{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:center}
+.nils figure{margin:0;position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5}
+.nils img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.nils blockquote{margin:0;font:italic 350 clamp(30px,3.4vw,46px)/1.18 var(--kopf);color:var(--ink)}
+.nils .wer{margin:22px 0 28px;color:var(--ink-2)}
+.nils .zwinker{font:italic 350 22px/1.35 var(--kopf);color:var(--wald);border-left:3px solid var(--gold);padding-left:16px;margin:0 0 30px}
+/* Vollbreitenbild */
+.vollbild{padding:0;background:var(--nacht)}
+.vollbild figure{position:relative;aspect-ratio:21/9;max-height:420px;overflow:hidden}
+.vollbild img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fuss{background:var(--nacht);color:#B9BCB8;padding:56px 0 40px;font-size:14px}
+.fuss .reihe{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.fuss .logo{height:80px}
+.fuss .hinweis{max-width:520px;color:var(--hellgrau)}
+.fuss .klein{color:#8E928F;font-size:12.5px;margin-top:26px;line-height:1.55}
+@media (max-width:980px){
+ .orte-raster{grid-template-columns:1fr 1fr}
+ .bandbilder .raster{grid-template-columns:1fr 1fr}
+ .bandbild:nth-child(3){grid-column:1/-1}
+ .bandbild{aspect-ratio:16/10}
+}
+@media (max-width:820px){
+ .nav ul{display:none}.burger{display:block}.nav .logo{height:58px}
+ .hero .quer{display:none}.hero .hoch{display:block}
+ .hero-inhalt{padding:110px 20px 80px}
+ .knoepfe{flex-direction:column;align-items:center}.knoepfe .knopf{width:min(100%,300px)}
+ .schritte,.wege,.nils .raster,.moment .raster,.orte-raster,.bandbilder .raster{grid-template-columns:1fr}
+ .bandbild:nth-child(3){grid-column:auto}
+ .bandbild{aspect-ratio:16/10}
+ .schritte:before,.schritt .punkt{display:none}
+ .dunkel,.hell,.nils,.orte,.moment{padding:76px 0}
+ .bildlabel{font-size:10px;letter-spacing:.11em;padding:6px 9px;max-width:calc(100% - 16px)}
+ .vollbild figure{aspect-ratio:16/10;max-height:none}
+}
+</style>
+</head>
+<body>
+<div class="band">Voransicht, nicht öffentlich beworben. Nichts kann gebucht oder gesendet werden.</div>
+
+<header class="hero" id="top">
+  <video class="quer" autoplay muted loop playsinline poster="assets/video/hero-quer-poster.jpg"><source src="assets/video/hero-quer.mp4" type="video/mp4"></video>
+  <video class="hoch" autoplay muted loop playsinline poster="assets/video/hero-hoch-poster.jpg"><source src="assets/video/hero-hoch.mp4" type="video/mp4"></video>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="#top" aria-label="Gatherwynd"><img class="logo" src="assets/logo/wortbildmarke-dunkel.svg" alt="Gatherwynd"></a>
+    <ul>
+      <li><a href="#so">So funktioniert es</a></li>
+      <li><a href="#wege">Zwei Wege</a></li>
+      <li><a href="#orte">Orte</a></li>
+      <li><a href="#nils">Wer sind wir</a></li>
+      <li><a class="klein" href="#wege">Anfragen</a></li>
+    </ul>
+    <span class="burger" aria-hidden="true"></span>
+  </nav>
+  <div class="hero-inhalt">
+    <p class="kicker">New leaders. New places. Drop in.</p>
+    <h1>Der Weg, der <em>zusammenbringt.</em></h1>
+    <p class="sub">Lange Tafeln, warmes Licht und Menschen, die du gestern noch nicht kanntest.</p>
+    <a class="textlink" href="#so">Erst mal in Ruhe umschauen <span aria-hidden="true">›</span></a>
+    <div class="knoepfe">
+      <a class="knopf k-orange" href="#wege">Retreat buchen</a>
+      <a class="knopf k-weiss" href="#wege">Dein Bespoke Retreat planen</a>
+    </div>
+  </div>
+  <span class="pfeil" aria-hidden="true"></span>
+</header>
+
+<main>
+<section class="dunkel" id="so">
+  <div class="wrap">
+    <h2>So funktioniert es</h2>
+    <p class="lead">Wir werden dir kleine Retreat Center mit 5 bis 40 Zimmern vorstellen, die Yoga, Fasten, Auszeit und Wellness anbieten.</p>
+    <div class="schritte">
+      <div class="schritt"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="#E2C541" stroke-width="1.6"><circle cx="22" cy="22" r="15"/><circle cx="22" cy="7" r="2" fill="#E2C541"/><circle cx="37" cy="22" r="2" fill="#E2C541"/><circle cx="22" cy="37" r="2" fill="#E2C541"/><circle cx="7" cy="22" r="2" fill="#E2C541"/></svg><span class="punkt"></span>
+        <h3>Center ansehen</h3><p>Retreat Center, Programm sachlich beschrieben. Ohne Glanz und ohne große Worte.</p></div>
+      <div class="schritt"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="#E2C541" stroke-width="1.6"><path d="M8 34 22 10l14 24Z"/><circle cx="22" cy="25" r="2.4" fill="#E2C541"/></svg><span class="punkt"></span>
+        <h3>Anfragen</h3><p>Drei kurze Fragen zeigen, ob es passt. Wenn nicht, auch gut.</p></div>
+      <div class="schritt"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="#E2C541" stroke-width="1.6"><circle cx="15" cy="22" r="9"/><circle cx="29" cy="22" r="9"/></svg><span class="punkt"></span>
+        <h3>Wir melden uns</h3><p>Wir melden uns mit allen Details zu Buchung und Zahlung. Persönlich, ganz ohne Eile.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bandbilder" aria-label="Bildband">
+  <div class="wrap">
+    <div class="raster">
+      <article class="bandbild"><figure>
+        <img src="assets/bilder/ki-tafel-gemeinsam-1200.webp" alt="Gemeinsame Tafel mit Brot, Obst und Händen, die zureichen" width="1152" height="864">
+        <span class="bildlabel">KI-generiert</span>
+      </figure></article>
+      <article class="bandbild"><figure>
+        <img src="assets/bilder/px-10891299-waldweg-1200.webp" alt="Waldweg von oben durch herbstliche Baumkronen" width="1200" height="1600">
+        <span class="bildlabel">Foto · J. Wolfert / Pexels</span>
+      </figure></article>
+      <article class="bandbild"><figure>
+        <img src="assets/bilder/ki-balkon-garten-1200.webp" alt="Holzterrasse mit Blick in einen grünen Garten" width="1200" height="900">
+        <span class="bildlabel">KI-generiert</span>
+      </figure></article>
+    </div>
+  </div>
+</section>
+
+<section class="hell" id="wege">
+  <div class="wrap">
+    <h2>Zwei Wege zu deiner Auszeit</h2>
+    <p class="lead">Feste Retreats mit einem klaren Programm oder eine Auszeit, die wir in Ruhe mit dir abstimmen. Du entscheidest.</p>
+    <div class="wege">
+      <article class="weg">
+        <figure>
+          <img src="assets/bilder/ki-wege-a-gruppe-1200.webp" alt="Kleine Gruppe im Gespräch auf der Holzterrasse eines Retreat-Centers" width="1200" height="675">
+          <figcaption>Feste Retreats</figcaption>
+          <span class="bildlabel oben">KI-generiert</span>
+        </figure>
+        <div class="inhalt"><span class="marke">Weg A</span><h3>Retreat buchen</h3>
+          <p>Feste Programme, feste Termine und klare Preise. Such dir aus, was zu dir passt, und buche ohne langes Hin und Her.</p>
+          <p class="klein">Oder beantworte drei kurze Fragen.</p>
+          <a class="knopf k-orange-hell" href="#wege">Retreat buchen</a></div>
+      </article>
+      <article class="weg">
+        <figure>
+          <img src="assets/bilder/ki-wege-b-privat-1200.webp" alt="Zwei Personen ruhig auf privater Terrasse mit Blick ins Grün" width="1200" height="675">
+          <figcaption>Deine Auszeit</figcaption>
+          <span class="bildlabel oben">KI-generiert</span>
+        </figure>
+        <div class="inhalt"><span class="marke">Weg B</span><h3>Private Bespoke Retreat</h3>
+          <p>Deine Termine, dein Tempo, die Begleitung, die du dir wünschst. Wir stellen es mit dir zusammen, persönlich und diskret.</p>
+          <p class="klein">Eine persönliche Anfrage, kein festes Programm.</p>
+          <a class="knopf k-rand" href="#wege">Dein Bespoke Retreat planen</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="moment" id="moment">
+  <div class="wrap raster">
+    <figure>
+      <img src="assets/bilder/ki-terrasse-gespraech-1200.webp" alt="Zwei Menschen im ruhigen Gespräch auf einer Holzterrasse mit Blick ins Tal" width="1152" height="864">
+      <span class="bildlabel">KI-generiert</span>
+    </figure>
+    <div>
+      <h2>Ruhige Orte, echte Momente</h2>
+      <p>Kleine Center, offene Terrassen und Zimmer mit Blick ins Grün. Kein Lärm, kein Show. Menschen, die sich Zeit nehmen.</p>
+      <p>Hotels, Retreat Center und Eco-Lodges, die sich anfühlen wie zu Hause bei Freunden. Wir zeigen dir, wie es dort wirklich aussieht.</p>
+    </div>
+  </div>
+</section>
+
+<section class="orte" id="orte">
+  <div class="wrap">
+    <h2>Orte zum Ankommen</h2>
+    <p class="lead">Eco-Lodges, Hotelgärten, Zimmer mit Ausblick und Häuser im Grün. Symbolmotive, bis Nils vor Ort filmt.</p>
+    <div class="orte-raster">
+      <article class="karte"><figure>
+        <img src="assets/bilder/ki-ecolodge-aussen-1200.webp" alt="Holz-Eco-Lodge mit Hängematte und Gartenweg vor nebligen Bergen" width="1152" height="864">
+        <span class="bildlabel">KI-generiert</span>
+      </figure><div class="inhalt"><span class="marke">Eco-Lodge</span><h3>Im Nebelgrün</h3><p>Kleine Häuser, Gartenweg, Blick auf die Berge.</p></div></article>
+      <article class="karte"><figure>
+        <img src="assets/bilder/px-33658140-aframe-1000.webp" alt="A-Frame Holzlodge zwischen Kiefern vor Berghang" width="1000" height="1333">
+        <span class="bildlabel">Foto · Dmitry A.</span>
+      </figure><div class="inhalt"><span class="marke">Lodge</span><h3>Im Bergwald</h3><p>Holz, Ruhe und ein Dach unter Bäumen.</p></div></article>
+      <article class="karte"><figure>
+        <img src="assets/bilder/ki-hotel-garten-1400.webp" alt="Mediterraner Hotelgarten mit Pergola, Olivenbaum und Lounge-Stühlen" width="1280" height="720">
+        <span class="bildlabel">KI-generiert</span>
+      </figure><div class="inhalt"><span class="marke">Hotelgarten</span><h3>Unter dem Olivenbaum</h3><p>Steinwege, Schatten und ein Platz zum Sitzen.</p></div></article>
+      <article class="karte"><figure>
+        <img src="assets/bilder/ki-zimmer-ausblick-1200.webp" alt="Holzzimmer mit Bett und offenem Fenster zum Tropengarten" width="1152" height="864">
+        <span class="bildlabel">KI-generiert</span>
+      </figure><div class="inhalt"><span class="marke">Zimmer</span><h3>Mit Ausblick</h3><p>Leinenbett, Holz und Grün vor dem Fenster.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="hell" style="padding-top:0;padding-bottom:40px">
+  <div class="wrap">
+    <div class="orte-raster orte-zwei" style="max-width:760px;margin:0 auto">
+      <article class="karte"><figure style="aspect-ratio:3/4">
+        <img src="assets/bilder/px-17821266-chalet-1000.webp" alt="Holzhaus in einer Bergwiese mit Blumen" width="1000" height="1333">
+        <span class="bildlabel">Foto · D. Trindade</span>
+      </figure><div class="inhalt"><span class="marke">Chalet</span><h3>In der Wiese</h3><p>Holzfassade, Balkon und offener Himmel.</p></div></article>
+      <article class="karte"><figure style="aspect-ratio:3/4">
+        <img src="assets/bilder/px-13871337-gartenblick-1200.webp" alt="Blick vom Holzbalkon in einen begrünten Retreat-Garten" width="1200" height="800">
+        <span class="bildlabel">Foto · M. Bertelli</span>
+      </figure><div class="inhalt"><span class="marke">Terrasse</span><h3>Über dem Garten</h3><p>Holzunterstand und Grün bis zum Horizont.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="nils" id="nils">
+  <div class="wrap raster">
+    <figure>
+      <img src="assets/bilder/nils-video-b.jpg" alt="Nils, Standbild aus seinem Vorstellungsvideo">
+      <span class="bildlabel">Nils · eigenes Video</span>
+    </figure>
+    <div>
+      <blockquote>„Ich möchte selbst hinfahren, vor Ort filmen und dir zeigen, wie es dort aussieht.“</blockquote>
+      <p class="wer">Nils, Gründer von Gatherwynd. Ab Dezember unterwegs, auch in Peru.</p>
+      <p class="zwinker">Und wenn du jetzt gar nichts tun willst: Auch gut. Folge einfach mit.</p>
+      <a class="knopf k-orange-hell" href="#top">Folge @Gatherwynd</a>
+    </div>
+  </div>
+</section>
+
+<section class="vollbild" aria-label="Ruhe vor dem Fuß">
+  <figure>
+    <img src="assets/bilder/px-25276207-seehaus-1000.webp" alt="Kleines Haus mit Terrasse am ruhigen Wasserlauf im Grün" width="1000" height="1365">
+    <span class="bildlabel">Foto · R. So / Pexels</span>
+  </figure>
+</section>
+</main>
+
+<footer class="fuss">
+  <div class="wrap">
+    <div class="reihe">
+      <img class="logo" src="assets/logo/wortbildmarke-dunkel.svg" alt="Gatherwynd">
+      <p class="hinweis">Retreats auf Gatherwynd sind Auszeiten, keine medizinische oder psychologische Behandlung. Sie ersetzen keinen Arzt und keine Therapie.</p>
+    </div>
+    <p class="klein">Voransicht 06.11.2026, nicht öffentlich beworben. Hintergrundvideo: stummer Mixkit-Free-Loop (7 Clips, warmes Grading; Details in video-quellen.md). Fotos: Matheus Bertelli, Denner Trindade, Dmitry Alexandrovich, Justin Wolfert, Robert So / Pexels (Symbolfotos). KI-Bilder (inkl. Zwei Wege): eigene Generierung, auf der Seite mit „KI-generiert“ gekennzeichnet. Details in bilder-quellen.md. Schriften Fraunces und Archivo (SIL OFL).</p>
+  </div>
+</footer>
+</body>
+</html>

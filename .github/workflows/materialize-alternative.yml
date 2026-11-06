@@ -1,15 +1,14 @@
+# Deaktiviert für Auto-Runs (kein push). Nur noch manuell per workflow_dispatch.
+# Grund: frühere Payload-Batches lösten bei jedem Push Fehlermails aus.
 name: Materialize alternative assets
 on:
-  push:
-    paths:
-      - 'alternative/_payload/**'
-      - '.github/workflows/materialize-alternative.yml'
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   materialize:
     runs-on: ubuntu-latest
+    if: false
     steps:
       - uses: actions/checkout@v4
       - name: Decode base64 payload into alternative/

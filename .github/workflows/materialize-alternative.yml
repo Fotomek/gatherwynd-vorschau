@@ -1,0 +1,49 @@
+name: Materialize alternative assets
+on:
+  push:
+    paths:
+      - 'alternative/_payload/**'
+      - '.github/workflows/materialize-alternative.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode base64 payload into alternative/
+        run: |
+          python3 <<'PY'
+          import json, base64
+          from pathlib import Path
+          root = Path('alternative/_payload')
+          if not root.exists():
+              print('no payload'); raise SystemExit(0)
+          manifest = json.loads((root/'MANIFEST.json').read_text())
+          for item in manifest:
+              rel = item['path']
+              parts = item['parts']
+              safe = rel.replace('/', '__')
+              chunks = []
+              for i in range(parts):
+                  p = root / f'{safe}.part{i:03d}.b64'
+                  chunks.append(p.read_text().strip())
+              data = base64.b64decode(''.join(chunks))
+              out = Path('alternative') / rel
+              out.parent.mkdir(parents=True, exist_ok=True)
+              out.write_bytes(data)
+              print('wrote', out, len(data))
+          PY
+      - name: Remove payload and commit assets
+        run: |
+          rm -rf alternative/_payload
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A alternative
+          if git diff --cached --quiet; then
+            echo 'nothing to commit'
+            exit 0
+          fi
+          git commit -m "Materialize alternative LP binary assets from payload"
+          git push

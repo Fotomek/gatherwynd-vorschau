@@ -1,0 +1,112 @@
+[
+  {
+    "path": "assets/fonts/archivo-latin.woff2",
+    "parts": 1,
+    "size": 30848
+  },
+  {
+    "path": "assets/fonts/archivo-latinext.woff2",
+    "parts": 1,
+    "size": 28016
+  },
+  {
+    "path": "assets/fonts/fraunces-latin.woff2",
+    "parts": 1,
+    "size": 33376
+  },
+  {
+    "path": "assets/fonts/fraunces-italic-latin.woff2",
+    "parts": 1,
+    "size": 32276
+  },
+  {
+    "path": "assets/bilder/ki-balkon-garten-1200.webp",
+    "parts": 2,
+    "size": 275564
+  },
+  {
+    "path": "assets/bilder/ki-ecolodge-aussen-1200.webp",
+    "parts": 2,
+    "size": 252260
+  },
+  {
+    "path": "assets/bilder/ki-hotel-garten-1400.webp",
+    "parts": 2,
+    "size": 276190
+  },
+  {
+    "path": "assets/bilder/ki-tafel-gemeinsam-1200.webp",
+    "parts": 1,
+    "size": 183378
+  },
+  {
+    "path": "assets/bilder/ki-terrasse-gespraech-1200.webp",
+    "parts": 1,
+    "size": 188424
+  },
+  {
+    "path": "assets/bilder/ki-wege-a-gruppe-1200.webp",
+    "parts": 1,
+    "size": 137112
+  },
+  {
+    "path": "assets/bilder/ki-wege-b-privat-1200.webp",
+    "parts": 1,
+    "size": 123590
+  },
+  {
+    "path": "assets/bilder/ki-zimmer-ausblick-1200.webp",
+    "parts": 1,
+    "size": 137216
+  },
+  {
+    "path": "assets/bilder/nils-video-b.jpg",
+    "parts": 1,
+    "size": 50664
+  },
+  {
+    "path": "assets/bilder/px-10891299-waldweg-1200.webp",
+    "parts": 3,
+    "size": 620142
+  },
+  {
+    "path": "assets/bilder/px-13871337-gartenblick-1200.webp",
+    "parts": 2,
+    "size": 268542
+  },
+  {
+    "path": "assets/bilder/px-17821266-chalet-1000.webp",
+    "parts": 2,
+    "size": 239210
+  },
+  {
+    "path": "assets/bilder/px-25276207-seehaus-1000.webp",
+    "parts": 2,
+    "size": 414888
+  },
+  {
+    "path": "assets/bilder/px-33658140-aframe-1000.webp",
+    "parts": 2,
+    "size": 436600
+  },
+  {
+    "path": "assets/video/hero-quer-poster.jpg",
+    "parts": 2,
+    "size": 264882
+  },
+  {
+    "path": "assets/video/hero-hoch-poster.jpg",
+    "parts": 1,
+    "size": 114913
+  },
+  {
+    "path": "assets/video/hero-quer.mp4",
+    "parts": 23,
+    "size": 4976093
+  },
+  {
+    "path": "assets/video/hero-hoch.mp4",
+    "parts": 27,
+    "size": 5949249
+  }
+]

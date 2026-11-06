@@ -122,6 +122,81 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
 .feld [aria-invalid=true]{border-color:#B3261E}.fehler{color:#B3261E;font-size:14px;margin:0;font-weight:600}.fehler:empty{display:none}
 .feld.check{grid-template-columns:auto 1fr;align-items:start;gap:10px}.feld.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--akzent)}.feld.check label{font-weight:400;font-size:15px}
 .mf-kanal,.mf-fertig{margin:4px 0 14px}
+
+/* Nils-Interview und Voransicht-Formulare */
+.nils-film{background:var(--flaeche-2);padding:72px 0 64px;scroll-margin-top:96px}
+.nils-film-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:36px 48px;align-items:center;max-width:1000px;margin-inline:auto}
+.nils-film-text{min-width:0}
+.nils-kicker{font:700 13px/1.2 var(--font-text);letter-spacing:.18em;text-transform:uppercase;color:var(--akzent);margin:0 0 12px}
+.nils-film h2{font-size:clamp(34px,4vw,52px);line-height:1.08;margin:0 0 14px;text-wrap:balance}
+.nils-lead{max-width:36em;margin:0;color:var(--ink-2)}
+.nils-film-buehne{display:flex;align-items:center;gap:18px}
+.nils-portrait{margin:0;width:min(340px,34vw);flex:0 0 auto}
+.nils-portrait video{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#141615;border-radius:18px;display:block;box-shadow:var(--schatten)}
+.stimme-label{display:inline-flex;align-items:center;gap:8px;margin:0;max-width:220px;font:600 10.5px/1.35 "Archivo LP",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.92);padding:7px 10px;border-radius:2px;background:rgba(17,18,19,.82)}
+.stimme-label:before{content:"";width:14px;height:1px;background:#E2C541;flex:0 0 auto}
+.gw-anfragen{background:#fff;padding:72px 0 80px;scroll-margin-top:96px;overflow-wrap:break-word}
+.gw-anfragen .wrap{max-width:880px}
+.gw-kopf{margin-bottom:22px}
+.gw-anfragen h2{font-size:clamp(32px,4vw,46px);line-height:1.08;margin:0 0 12px;text-wrap:balance}
+.gw-lead{max-width:40em;margin:0;color:var(--ink-2)}
+.gw-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 18px}
+.gw-tab{display:flex;align-items:flex-end;min-height:92px;padding:16px 14px;border-radius:18px;border:1.5px solid var(--linie);background:var(--flaeche);text-decoration:none;color:var(--ink);box-shadow:var(--schatten)}
+.gw-tab-titel{font:480 clamp(17px,1.5vw,20px)/1.25 var(--font-kopf);text-wrap:balance}
+.gw-anfragen.gw-bereit .gw-tab[aria-selected="true"]{border-color:var(--akzent);background:#fff;box-shadow:inset 0 -3px 0 var(--licht)}
+.gw-anfragen.gw-bereit .gw-panel{display:none}
+.gw-anfragen.gw-bereit .gw-panel.ist-aktiv{display:block}
+.gw-panel{background:var(--flaeche);border:1px solid var(--linie);border-radius:22px;box-shadow:var(--schatten);padding:28px 26px 30px;scroll-margin-top:96px;min-width:0}
+.gw-anfragen h3{font-size:clamp(26px,3vw,32px);margin:0 0 8px}
+.gw-einleitung,.gw-doppel{color:var(--ink-2);margin:0 0 18px;font-size:16px}
+.gw-doppel{border-left:3px solid var(--licht);padding:2px 0 2px 14px}
+.gw-frage{border:0;padding:0;margin:0 0 8px;min-width:0}
+.gw-frage legend{font:480 22px/1.3 var(--font-kopf);padding:0;margin:0 0 10px}
+.gw-opts{display:grid;gap:8px}
+.gw-opt{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--linie);border-radius:14px;padding:12px 14px;background:#fff;cursor:pointer;min-height:48px}
+.gw-opt:has(input:checked){border-color:var(--akzent);box-shadow:inset 0 0 0 1px var(--akzent)}
+.gw-opt input{accent-color:var(--akzent);width:18px;height:18px;margin-top:2px;flex:none}
+.gw-felder{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:0 0 4px}
+.gw-feld{display:grid;gap:6px;margin:0 0 14px;align-content:start;min-width:0}
+.gw-felder .gw-feld{margin-bottom:0}
+.gw-feld label,.gw-check label,.gw-zwischen{font-family:"Archivo LP",system-ui,sans-serif}
+.gw-feld label,.gw-check label{font-weight:600;font-size:14px;line-height:1.4}
+.gw-zwischen{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--akzent);margin:8px 0 12px}
+.gw-optional{font-weight:500;color:var(--ink-3)}
+.gw-stern{color:var(--akzent)}
+.gw-feld input,.gw-feld textarea,.gw-feld select{font:16px/1.4 "Archivo LP",system-ui,sans-serif;padding:12px;border:1.5px solid var(--ink-3);border-radius:12px;background:#fff;color:var(--ink);width:100%;max-width:100%;min-height:48px}
+.gw-feld textarea{min-height:120px;resize:vertical}
+.gw-feld [aria-invalid=true],.gw-frage[aria-invalid=true] .gw-opt{border-color:#B3261E}
+.gw-fehler{color:#B3261E;font-size:14px;font-weight:600;margin:0}
+.gw-fehler:empty{display:none}
+.gw-check{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;align-items:start;margin:4px 0 8px}
+.gw-check input{width:20px;height:20px;margin-top:2px;accent-color:var(--akzent)}
+.gw-check label{font-weight:400;font-size:15px}
+.gw-check a{color:var(--akzent);font-weight:650;text-decoration:underline;text-underline-offset:2px}
+.gw-senden{margin-top:6px;cursor:pointer}
+.gw-status{display:block;margin:16px 0 0;padding:12px 14px;border-left:3px solid var(--licht);background:#FBF6DE;color:var(--ink);font-weight:650;border-radius:0 12px 12px 0}
+.gw-anfragen [hidden]{display:none !important}
+.gw-platzhalter{margin:22px 0 0;padding:12px 14px;border:1.5px dashed var(--akzent);border-radius:10px;font-size:14px;line-height:1.5;background:repeating-linear-gradient(135deg,transparent 0 6px,color-mix(in srgb,var(--akzent) 9%,transparent) 6px 12px);scroll-margin-top:96px}
+.gw-platzhalter-m{font-weight:700;color:var(--akzent);text-transform:uppercase;font-size:12px;letter-spacing:.06em;margin-right:6px}
+.gw-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.nils-film :focus-visible,.gw-anfragen :focus-visible{outline:2px solid var(--akzent);outline-offset:2px}
+@media (max-width:800px){
+  .nils-film{padding:48px 0 40px}
+  .nils-film-grid{grid-template-columns:1fr;justify-items:center;gap:22px}
+  .nils-film-text{text-align:center}
+  .nils-lead{margin-inline:auto}
+  .nils-film-buehne{flex-direction:column;align-items:center}
+  .nils-portrait{width:min(300px,calc(100vw - 48px))}
+  .gw-anfragen{padding:48px 0 56px}
+  .gw-tabs{grid-template-columns:1fr 1fr}
+  .gw-tab{min-height:76px}
+  .gw-panel{padding:20px 16px 22px;border-radius:18px}
+  .gw-senden{width:100%}
+}
+@media (max-width:420px){
+  .nils-portrait{width:min(280px,calc(100vw - 40px))}
+}
+
 </style></head>
 <body><a class="skip" href="#main"><span data-i18n="t099">Skip to content</span></a>
 <aside class="vorschau-band" id="vorschau-band" aria-label="Preview notice" data-i18n-aria-label="t100"><span data-i18n="t101">Demo, nothing is sent. Preview, not published: nothing can be booked or paid here.</span></aside>
@@ -133,6 +208,29 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
 <div class="wege" id="wege" role="group" aria-label="Two ways" data-i18n-aria-label="t107"><div class="weg"><p class="claim"><span data-i18n="t108">Way A</span></p><h2 class="weg-t"><span data-i18n="t109">Book a retreat</span></h2><p><span data-i18n="t110">Set programmes, fixed dates and clear prices. Pick what suits you and book without long back and forth.</span></p><p class="weg-knopf"><a class="btn voll" href="angebote/"><span data-i18n="t109">Book a retreat</span></a></p><p class="klein"><span data-i18n="t111">For now you will find example retreats here. They are fictional and not bookable.</span> <a href="#anfrage"><span data-i18n="t112">Or answer three short questions.</span></a></p></div><div class="weg weg-b"><p class="claim"><span data-i18n="t113">Way B</span></p><h2 class="weg-t"><span data-i18n="t114">Private Bespoke Retreat</span></h2><p><span data-i18n="t115">Your own dates, your own pace, the guidance you choose. We put it together with you, personally and discreetly.</span></p><p class="weg-knopf"><a class="btn zart" href="bespoke/"><span data-i18n="t116">Plan your bespoke retreat</span></a></p><p class="klein"><span data-i18n="t117">A personal request, no fixed programme.</span></p></div></div>
 <ul class="themen"><li><span data-i18n="t062">Time out</span></li><li><span data-i18n="t063">Slow down</span></li><li><span data-i18n="t064">Nature</span></li><li><span data-i18n="t065">Together</span></li></ul>
 <figure class="foto hero-foto"><picture><source type="image/avif" srcset="assets/bilder/px-0-hero-tisch-haende-640.avif 640w, assets/bilder/px-0-hero-tisch-haende-800.avif 800w, assets/bilder/px-0-hero-tisch-haende-1024.avif 1024w, assets/bilder/px-0-hero-tisch-haende-1600.avif 1600w" sizes="(min-width:1200px) 1160px, calc(100vw - 40px)"><source type="image/webp" srcset="assets/bilder/px-0-hero-tisch-haende-640.webp 640w, assets/bilder/px-0-hero-tisch-haende-800.webp 800w, assets/bilder/px-0-hero-tisch-haende-1024.webp 1024w, assets/bilder/px-0-hero-tisch-haende-1600.webp 1600w" sizes="(min-width:1200px) 1160px, calc(100vw - 40px)"><img class="" src="assets/bilder/px-0-hero-tisch-haende-800.webp" width="1600" height="1067" fetchpriority="high" decoding="async" alt="Hands serving olives, bread and grapes at a wooden table outdoors" data-i18n-alt="t096"></picture><figcaption class="bildhinweis"><span data-i18n="t097">Symbol photo</span> · <span data-i18n="t098">Photo</span>: Rachel Claire / Pexels</figcaption></figure></section>
+
+<section class="nils-film" id="nils-erzaehlt" lang="de" aria-labelledby="nils-erzaehlt-t">
+  <div class="wrap">
+    <div class="nils-film-grid">
+      <div class="nils-film-text">
+        <p class="nils-kicker">In Ruhe</p>
+        <h2 id="nils-erzaehlt-t">Nils erzählt</h2>
+        <p class="nils-lead">Was Gatherwynd ist, woher der Name kommt und was Nils dorthin geführt hat. Die Untertitel sind auf Deutsch.</p>
+      </div>
+      <div class="nils-film-buehne">
+        <figure class="nils-portrait">
+          <video class="nils-interview" controls playsinline preload="metadata" width="720" height="1280" poster="assets/interview/nils-interview-b3-poster.jpg">
+            <source src="assets/interview/nils-interview-b3-web.mp4" type="video/mp4">
+            <track kind="subtitles" src="assets/interview/untertitel-de.vtt" srclang="de" label="Deutsch" default>
+          </video>
+          <figcaption class="gw-sr">Interview mit Nils. Untertitel auf Deutsch.</figcaption>
+        </figure>
+        <p class="stimme-label">Interviewer-Stimme KI-generiert</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="beispiele" id="beispiele" aria-labelledby="beispiele-t"><div class="wrap"><p class="claim"><span data-i18n="t176">Example retreats</span></p><h2 id="beispiele-t"><span data-i18n="t177">What a few days away could feel like</span></h2><p class="kennz-box"><strong><span data-i18n="t121">Example · fictional · not bookable</span>.</strong> <span data-i18n="t178">These are fictional example offers. They show how retreats on Gatherwynd could look. You cannot book them.</span></p><div class="angebote" data-anzahl="5"><article class="karte einblenden" id="angebot-garraf" aria-labelledby="angebot-garraf-t"><p class="kennz"><span data-i18n="t121">Example · fictional · not bookable</span></p><figure class="foto foto-gross"><picture><source type="image/avif" srcset="assets/bilder/px-1-katalonien-weg-480.avif 480w, assets/bilder/px-1-katalonien-weg-800.avif 800w, assets/bilder/px-1-katalonien-weg-1200.avif 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><source type="image/webp" srcset="assets/bilder/px-1-katalonien-weg-480.webp 480w, assets/bilder/px-1-katalonien-weg-800.webp 800w, assets/bilder/px-1-katalonien-weg-1200.webp 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><img class="" src="assets/bilder/px-1-katalonien-weg-800.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Country path past an old stone building with a cypress" data-i18n-alt="t122"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Geert Rozendom / Pexels</figcaption></figure><div class="karte-text"><p class="karte-thema"><span data-i18n="t124">Time out · Slow down</span></p><h3 id="angebot-garraf-t"><span data-i18n="t125">Slow Down Days in the Garraf Hills</span></h3><p class="karte-ort"><span data-i18n="t126">Garraf hills, Catalonia, Spain (example location) · „Mas Brisaclara“ (fictional name) · 4 days / 3 nights</span></p><p class="karte-gefuehl"><span data-i18n="t127">For four days nobody needs anything from you. Long lunches, easy laughter, morning light over the hills.</span></p><ul class="karte-punkte"><li><span data-i18n="t118">Long table lunches under the pergola</span></li><li><span data-i18n="t119">Morning walks with sea views</span></li><li><span data-i18n="t120">Gentle yoga, free afternoons</span></li></ul><p class="preis"><span data-i18n="t128">from €690 (example price, fictional)</span></p><p class="klein"><span data-i18n="t129">All prices are fictional examples and not an offer.</span></p></div></article><article class="karte einblenden" id="angebot-anden" aria-labelledby="angebot-anden-t"><p class="kennz"><span data-i18n="t121">Example · fictional · not bookable</span></p><figure class="foto foto-gross"><picture><source type="image/avif" srcset="assets/bilder/px-2-anden-wandern-480.avif 480w, assets/bilder/px-2-anden-wandern-800.avif 800w, assets/bilder/px-2-anden-wandern-1200.avif 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><source type="image/webp" srcset="assets/bilder/px-2-anden-wandern-480.webp 480w, assets/bilder/px-2-anden-wandern-800.webp 800w, assets/bilder/px-2-anden-wandern-1200.webp 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><img class="" src="assets/bilder/px-2-anden-wandern-800.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Small group hiking in the Andes" data-i18n-alt="t137"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Jose Luis QE / Pexels</figcaption></figure><div class="karte-text"><p class="karte-thema"><span data-i18n="t138">Time out · Reflection</span></p><h3 id="angebot-anden-t"><span data-i18n="t139">6 Quiet Days in the Andes: Time to Slow Down</span></h3><p class="karte-ort"><span data-i18n="t140">Andean valley near Cusco, Peru (example location) · „Casa Nubequieta“ (fictional name) · 6 days / 5 nights</span></p><p class="karte-gefuehl"><span data-i18n="t141">Arrive. Slow down. Walk, talk, or stay quiet.</span></p><ul class="karte-punkte"><li><span data-i18n="t130">Arrival day with nothing planned</span></li><li><span data-i18n="t131">Easy valley walks</span></li><li><span data-i18n="t132">Writing and conversation in small groups</span></li></ul><p class="karte-hinweis"><span data-i18n="t133">This is a time out, not a medical or psychological treatment. If you are currently in treatment, please talk to your doctor or therapist first. Altitude can be demanding.</span> <span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p><p class="preis"><span data-i18n="t142">from €1,190 (example price, fictional)</span></p><p class="klein"><span data-i18n="t129">All prices are fictional examples and not an offer.</span></p></div><div class="karte-thumbs"><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-2-anden-lehmhaus-480.avif 480w, assets/bilder/px-2-anden-lehmhaus-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-2-anden-lehmhaus-480.webp 480w, assets/bilder/px-2-anden-lehmhaus-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-2-anden-lehmhaus-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="Adobe house with a stone wall" data-i18n-alt="t135"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Renso Villarreal / Pexels</figcaption></figure><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-2-anden-tal-480.avif 480w, assets/bilder/px-2-anden-tal-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-2-anden-tal-480.webp 480w, assets/bilder/px-2-anden-tal-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-2-anden-tal-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="Wide Andean valley under clouds" data-i18n-alt="t136"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: K / Pexels</figcaption></figure></div></article><article class="karte einblenden" id="angebot-nicoya" aria-labelledby="angebot-nicoya-t"><p class="kennz"><span data-i18n="t121">Example · fictional · not bookable</span></p><figure class="foto foto-gross"><picture><source type="image/avif" srcset="assets/bilder/px-3-costarica-kueste-480.avif 480w, assets/bilder/px-3-costarica-kueste-800.avif 800w, assets/bilder/px-3-costarica-kueste-1200.avif 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><source type="image/webp" srcset="assets/bilder/px-3-costarica-kueste-480.webp 480w, assets/bilder/px-3-costarica-kueste-800.webp 800w, assets/bilder/px-3-costarica-kueste-1200.webp 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><img class="" src="assets/bilder/px-3-costarica-kueste-800.webp" width="1200" height="844" loading="lazy" decoding="async" alt="Forest on the coast under clouds" data-i18n-alt="t147"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Jean Paul Montanaro / Pexels</figcaption></figure><div class="karte-text"><p class="karte-thema"><span data-i18n="t148">Yoga · Shiatsu</span></p><h3 id="angebot-nicoya-t"><span data-i18n="t149">Yoga &amp; Shiatsu by the Jungle Sea</span></h3><p class="karte-ort"><span data-i18n="t150">Nicoya Peninsula, Costa Rica (example location) · „Selva Clara“ (fictional name) · 7 days / 6 nights</span></p><p class="karte-gefuehl"><span data-i18n="t151">Your mat on the open deck, mist over the jungle, the ocean turning gold in front of you.</span></p><ul class="karte-punkte"><li><span data-i18n="t143">Sunrise yoga above the canopy</span></li><li><span data-i18n="t144">3 shiatsu sessions with a shiatsu practitioner</span></li><li><span data-i18n="t145">Bungalows with hammocks</span></li></ul><p class="karte-hinweis"><span data-i18n="t146">Shiatsu is bodywork for relaxation. It does not replace medical care.</span> <span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p><p class="preis"><span data-i18n="t152">from €1,480 (example price, fictional)</span></p><p class="klein"><span data-i18n="t129">All prices are fictional examples and not an offer.</span></p></div></article><article class="karte einblenden" id="angebot-alentejo" aria-labelledby="angebot-alentejo-t"><p class="kennz"><span data-i18n="t121">Example · fictional · not bookable</span></p><figure class="foto foto-gross"><picture><source type="image/avif" srcset="assets/bilder/px-4-portugal-spaziergang-480.avif 480w, assets/bilder/px-4-portugal-spaziergang-800.avif 800w, assets/bilder/px-4-portugal-spaziergang-1200.avif 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><source type="image/webp" srcset="assets/bilder/px-4-portugal-spaziergang-480.webp 480w, assets/bilder/px-4-portugal-spaziergang-800.webp 800w, assets/bilder/px-4-portugal-spaziergang-1200.webp 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><img class="" src="assets/bilder/px-4-portugal-spaziergang-800.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Group walking through a sunny orchard" data-i18n-alt="t159"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: İsa kahraman / Pexels</figcaption></figure><div class="karte-text"><p class="karte-thema"><span data-i18n="t160">Fasting · Daylight &amp; Rhythm</span></p><h3 id="angebot-alentejo-t"><span data-i18n="t161">Light &amp; Simple: 5 Quiet Days of Gentle Fasting in the Alentejo</span></h3><p class="karte-ort"><span data-i18n="t162">Alentejo, Portugal (example location) · „Monte Valdolhar“ (fictional name) · 5 days / 4 nights</span></p><p class="karte-gefuehl"><span data-i18n="t163">Water, daylight and air. Feet in the pond, and small habits that feel easy to keep.</span></p><ul class="karte-punkte"><li><span data-i18n="t153">Broths, juices, light meals</span></li><li><span data-i18n="t154">Daylight walks, a calm evening rhythm, breathing</span></li><li><span data-i18n="t155">Optional dip in the natural pond (only if you feel well)</span></li></ul><p class="karte-hinweis"><span data-i18n="t156">Fasting and cold water are not suitable for everyone. Please check with your doctor first, especially if you are pregnant, take medication or have a health condition. This is not a medical programme.</span> <span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p><p class="preis"><span data-i18n="t164">from €890 (example price, fictional)</span></p><p class="klein"><span data-i18n="t129">All prices are fictional examples and not an offer.</span></p></div><div class="karte-thumbs"><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-4-portugal-suppe-480.avif 480w, assets/bilder/px-4-portugal-suppe-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-4-portugal-suppe-480.webp 480w, assets/bilder/px-4-portugal-suppe-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-4-portugal-suppe-800.webp" width="800" height="534" loading="lazy" decoding="async" alt="Bowl of vegetable soup with a spoon" data-i18n-alt="t157"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Loren Castillo / Pexels</figcaption></figure><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-4-portugal-landhaus-480.avif 480w, assets/bilder/px-4-portugal-landhaus-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-4-portugal-landhaus-480.webp 480w, assets/bilder/px-4-portugal-landhaus-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-4-portugal-landhaus-800.webp" width="800" height="534" loading="lazy" decoding="async" alt="White and brown stone house by a meadow" data-i18n-alt="t158"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Daniel Tanque / Pexels</figcaption></figure></div></article><article class="karte einblenden" id="angebot-ubud" aria-labelledby="angebot-ubud-t"><p class="kennz"><span data-i18n="t121">Example · fictional · not bookable</span></p><figure class="foto foto-gross"><picture><source type="image/avif" srcset="assets/bilder/px-5-bali-yoga-ruecken-480.avif 480w, assets/bilder/px-5-bali-yoga-ruecken-800.avif 800w, assets/bilder/px-5-bali-yoga-ruecken-1200.avif 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><source type="image/webp" srcset="assets/bilder/px-5-bali-yoga-ruecken-480.webp 480w, assets/bilder/px-5-bali-yoga-ruecken-800.webp 800w, assets/bilder/px-5-bali-yoga-ruecken-1200.webp 1200w" sizes="(min-width:1200px) 560px, (min-width:760px) 46vw, 92vw"><img class="" src="assets/bilder/px-5-bali-yoga-ruecken-800.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Woman seen from behind stretching by a river in the green" data-i18n-alt="t171"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Lucas Pezeta / Pexels</figcaption></figure><div class="karte-text"><p class="karte-thema"><span data-i18n="t172">Time out · Yoga · Gentle fasting</span></p><h3 id="angebot-ubud-t"><span data-i18n="t173">Slow Mornings in the Green: 4 Days of Yoga, Gentle Fasting and Nature near Ubud</span></h3><p class="karte-ort"><span data-i18n="t174">Ubud area, Bali, Indonesia (example location) · „Pondok Wenarimba“ (fictional name) · 4 days / 3 nights</span></p><p class="karte-gefuehl"><span data-i18n="t175">You wake up to birds and the river below the garden. Nobody is in a hurry, and after class there is fresh fruit, warm broth and a lot of laughter.</span></p><ul class="karte-punkte"><li><span data-i18n="t165">Morning yoga by the river, for all levels</span></li><li><span data-i18n="t166">Juices, warm broths and light plant based meals</span></li><li><span data-i18n="t167">Slow walks through rice fields and jungle paths</span></li></ul><p class="karte-hinweis"><span data-i18n="t168">Fasting is not suitable for everyone. Please check with your doctor first, especially if you are pregnant, take medication or have a health condition. Tropical heat can be demanding, drink enough water. This is not a medical programme.</span> <span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p><p class="preis"><span data-i18n="t128">from €690 (example price, fictional)</span></p><p class="klein"><span data-i18n="t129">All prices are fictional examples and not an offer.</span></p></div><div class="karte-thumbs"><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-5-bali-fruehstueck-480.avif 480w, assets/bilder/px-5-bali-fruehstueck-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-5-bali-fruehstueck-480.webp 480w, assets/bilder/px-5-bali-fruehstueck-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-5-bali-fruehstueck-800.webp" width="800" height="600" loading="lazy" decoding="async" alt="Fruit bowl and two juices on a stone table among tropical plants" data-i18n-alt="t169"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: Bimbim Sindu / Pexels</figcaption></figure><figure class="foto foto-klein"><picture><source type="image/avif" srcset="assets/bilder/px-5-bali-ausblick-480.avif 480w, assets/bilder/px-5-bali-ausblick-800.avif 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><source type="image/webp" srcset="assets/bilder/px-5-bali-ausblick-480.webp 480w, assets/bilder/px-5-bali-ausblick-800.webp 800w" sizes="(min-width:1200px) 270px, (min-width:760px) 22vw, 45vw"><img class="" src="assets/bilder/px-5-bali-ausblick-800.webp" width="800" height="534" loading="lazy" decoding="async" alt="Woman on a terrace looking out over palm trees and green terraces, seen from behind" data-i18n-alt="t170"></picture><figcaption class="bildhinweis"><span data-i18n="t123">Symbol photo, not the place of the offer</span> · <span data-i18n="t098">Photo</span>: alleksana / Pexels</figcaption></figure></div></article></div><p class="klein beispiele-fuss"><span data-i18n="t179">All offers, places, house names, hosts and prices are fictional examples. All photos are symbol photos from Pexels (Pexels License) and do not show the places of the offers.</span> <span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p></div></section>
 
 <section class="sek" id="so"><h2><span data-i18n="t055">How it works</span></h2><ol class="schritte"><li><span class="nr" aria-hidden="true">1</span><h3><span data-i18n="t066">Browse centers</span></h3><p><span data-i18n="t067">Retreat centers, programs described factually.</span></p></li><li><span class="nr" aria-hidden="true">2</span><h3><span data-i18n="t068">Send a request</span></h3><p><span data-i18n="t069">Three short questions show whether it fits.</span></p></li><li><span class="nr" aria-hidden="true">3</span><h3><span data-i18n="t070">We'll get back to you</span></h3><p><span data-i18n="t022">We'll get back to you with all the details on booking and payment.</span></p></li></ol></section>
@@ -148,7 +246,249 @@ details{border-top:1px solid var(--linie);padding:14px 0}details:last-child{bord
 <p class="filter-stand" id="filter-stand" aria-live="polite"></p></div><div class="punkte" aria-hidden="true"><span></span><span></span><span></span></div>
 <p class="klein"><span data-i18n="t190">Three short questions show whether it fits right now.</span></p><fieldset class="frage" id="frage-1"><legend><span data-i18n="t074">Question 1</span></legend><p class="frage-t" id="frage-1-t"><span data-i18n="t075">Are you looking for a break at a small retreat center right now?</span></p><div class="opts"><label class="opt"><input type="radio" name="frage-1" value="ja" data-ziel="frage-2"><span><span data-i18n="t071">Yes, that is exactly what I am looking for</span></span></label><label class="opt"><input type="radio" name="frage-1" value="vielleicht" data-ziel="frage-2"><span><span data-i18n="t072">Maybe, I am just looking around for now</span></span></label><label class="opt"><input type="radio" name="frage-1" value="nein" data-ziel="ende-spaeter"><span><span data-i18n="t073">No, not right now</span></span></label></div><button type="button" class="btn voll" data-weiter><span data-i18n="t076">Next</span></button></fieldset><fieldset class="frage" id="frage-2"><legend><span data-i18n="t079">Question 2</span></legend><p class="frage-t" id="frage-2-t"><span data-i18n="t080">When would you like to travel?</span></p><div class="opts"><label class="opt"><input type="radio" name="frage-2" value="bald" data-ziel="frage-3" data-zeit="t077"><span><span data-i18n="t032">Within the next three months</span></span></label><label class="opt"><input type="radio" name="frage-2" value="spaeter" data-ziel="frage-3" data-zeit="t078"><span><span data-i18n="t033">In three to twelve months</span></span></label><label class="opt"><input type="radio" name="frage-2" value="offen" data-ziel="ende-zeitpunkt"><span><span data-i18n="t034">I don't know yet</span></span></label></div><button type="button" class="btn voll" data-weiter><span data-i18n="t076">Next</span></button></fieldset><fieldset class="frage" id="frage-3"><legend><span data-i18n="t083">Question 3</span></legend><p class="frage-t" id="frage-3-t"><span data-i18n="t084">Would you like to book now?</span></p><div class="opts"><label class="opt"><input type="radio" name="frage-3" value="buchen" data-ziel="ende-buchen"><span><span data-i18n="t081">Yes, book now</span></span></label><label class="opt"><input type="radio" name="frage-3" value="mehr" data-ziel="ende-mehr"><span><span data-i18n="t082">First I would like to know more</span></span></label></div><button type="button" class="btn voll" data-weiter><span data-i18n="t076">Next</span></button></fieldset><div class="filter-ende" id="ende-spaeter" hidden><h3 tabindex="-1"><span data-i18n="t087">Thanks for stopping by</span></h3><p><span data-i18n="t012">If you are looking for a break later on, you are always welcome here. Feel free to come back.</span></p><div class="ende-aktion"><a class="btn zart" href="#beispiele"><span data-i18n="t085">See example retreats (not bookable)</span></a><button type="button" class="btn zart" data-neu><span data-i18n="t086">Start again</span></button></div></div><div class="filter-ende" id="ende-zeitpunkt" hidden><h3 tabindex="-1"><span data-i18n="t088">Come back any time</span></h3><p><span data-i18n="t013">No problem. Once you know when you would like to travel, you will find your next step here. Until then, take your time to look at the example retreats.</span></p><div class="ende-aktion"><a class="btn zart" href="#beispiele"><span data-i18n="t085">See example retreats (not bookable)</span></a><button type="button" class="btn zart" data-neu><span data-i18n="t086">Start again</span></button></div></div><div class="filter-ende" id="ende-buchen" hidden><h3 tabindex="-1"><span data-i18n="t089">Booking via Nils</span></h3><p><span data-i18n="t018">Your booking runs through Nils. Choose how you would like to pay.</span></p><div class="zahl-vorschau" aria-labelledby="zv-t"><div class="zv-kopf"><p id="zv-t" class="zv-t"><span data-i18n="t019">Payment methods</span></p><span class="bald-badge"><span data-i18n="t020">Coming soon</span></span></div><ul class="zahlarten"><li><span class="zi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 9.5h19" stroke="currentColor" stroke-width="1.6"/><path d="M6 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span><span data-i18n="t014">Credit or debit card</span></span></li><li><span class="zi"><svg viewBox="0 0 24 24" aria-hidden="true"><text x="12" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="currentColor" font-family="Archivo LP,sans-serif">P</text><circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span><span data-i18n="t015">PayPal</span></span></li><li><span class="zi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 4l9 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5.5 10.5v6.5M10 10.5v6.5M14 10.5v6.5M18.5 10.5v6.5M3 19.5h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span><span data-i18n="t016">Bank transfer</span></span></li><li><span class="zi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span><span><span data-i18n="t017">Apple Pay / Google Pay</span></span></li></ul><p class="klein"><span data-i18n="t021">Preview only. You cannot pay here yet and nothing is charged.</span></p></div><p class="zahlung"><span data-i18n="t022">We'll get back to you with all the details on booking and payment.</span></p><p class="klein"><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t024">Payment provider and legal check still open</span></span></p><p class="mf-t"><span data-i18n="t025">Questions before you book?</span></p><p class="wa-text"><span data-i18n="t026">Prepared WhatsApp message:</span> „<span data-i18n="t027">Hi Nils, I would like to book and have a question first. I would like to travel</span> <span id="wa-zeit" data-i18n="js.bald">soon</span><span data-i18n="wa.ende">.</span>“</p><p><a class="btn zart" id="wa-buchen" href="#anfrage" aria-disabled="true"><span data-i18n="t029">Write to Nils on WhatsApp</span></a></p><p class="klein"><span class="ph"><span class="ph-m" data-i18n="ph">Placeholder</span> <span data-i18n="wa.folgt">WhatsApp number to follow</span></span></p><div class="ende-aktion"><button type="button" class="btn zart" data-neu><span data-i18n="t086">Start again</span></button></div></div><div class="filter-ende" id="ende-mehr" hidden><h3 tabindex="-1"><span data-i18n="t090">Happy to tell you more</span></h3><p><span data-i18n="t030">Tell us briefly what you are looking for.</span> <span data-i18n="t022">We'll get back to you with all the details on booking and payment.</span></p><form class="mailform" id="mailform" method="post" onsubmit="return false" novalidate aria-labelledby="mf-t"><p id="mf-t" class="mf-t"><span data-i18n="t035">Short request</span></p><div class="feld"><label for="mf-name"><span data-i18n="t036">Name</span></label><input id="mf-name" type="text" autocomplete="name" required aria-describedby="mf-name-f"><p class="fehler" id="mf-name-f" data-fehler="js.err.name"></p></div><div class="feld"><label for="mf-email"><span data-i18n="t037">Email</span></label><input id="mf-email" type="email" autocomplete="email" required aria-describedby="mf-email-f"><p class="fehler" id="mf-email-f" data-fehler="js.err.email"></p></div><div class="feld"><label for="mf-zeit"><span data-i18n="t038">Travel period</span></label><select id="mf-zeit" required aria-describedby="mf-zeit-f"><option value="" data-i18n="t031">Please choose</option><option value="bald" data-i18n="t032">Within the next three months</option><option value="spaeter" data-i18n="t033">In three to twelve months</option><option value="offen" data-i18n="t034">I don't know yet</option></select><p class="fehler" id="mf-zeit-f" data-fehler="js.err.zeit"></p></div><div class="feld"><label for="mf-text"><span data-i18n="t039">Message</span></label><textarea id="mf-text" rows="4"></textarea></div><div class="feld check"><input id="mf-ds" type="checkbox" required aria-describedby="mf-ds-f mf-ds-h"><label for="mf-ds"><span data-i18n="t040">I agree that my details are used to answer my request.</span></label></div><p class="klein" id="mf-ds-h"><span data-i18n="t041">Responsible: Thomas Malyska, Fotomek, thomas@malyska.de.</span> <span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t042">Full privacy policy</span></span></p><p class="fehler" id="mf-ds-f" data-fehler="js.err.ds"></p><button type="submit" class="btn voll"><span data-i18n="t043">Continue</span></button></form><div class="mf-kanal" id="mf-kanal" hidden><fieldset class="frage"><legend tabindex="-1" id="mf-kanal-t"><span data-i18n="t044">Any further questions? We are happy to talk.</span></legend><p class="klein"><span data-i18n="t045">Choose how you would like to continue.</span></p><div class="opts"><label class="opt"><input type="radio" name="kanal" value="whatsapp"><span><span data-i18n="t046">WhatsApp, chat or call</span></span></label><label class="opt"><input type="radio" name="kanal" value="email"><span><span data-i18n="t037">Email</span></span></label><label class="opt"><input type="radio" name="kanal" value="ohne"><span><span data-i18n="t047">No further questions for now</span></span></label></div><p class="fehler" id="mf-kanal-f" data-fehler="js.err.kanal"></p><button type="button" class="btn voll" id="mf-kanal-weiter"><span data-i18n="t048">Send request</span></button></fieldset></div><div class="mf-fertig" id="mf-fertig" hidden><p class="zahlung" tabindex="-1" id="mf-fertig-t"><span data-i18n="t049">Preview: nothing was sent.</span></p><div id="mf-fertig-whatsapp" class="mf-weg" hidden><p><span data-i18n="t050">Write or call Nils on WhatsApp, your request is already prepared.</span></p><p><a class="btn voll" id="wa-fragen" href="#anfrage" aria-disabled="true"><span data-i18n="t051">Open WhatsApp</span></a></p><p class="klein"><span class="ph"><span class="ph-m" data-i18n="ph">Placeholder</span> <span data-i18n="wa.folgt">WhatsApp number to follow</span></span></p></div><div id="mf-fertig-email" class="mf-weg" hidden><p><span data-i18n="t052">We will reply to you by email.</span></p><p class="klein"><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t053">Email sending not connected yet</span></span></p></div><p class="klein"><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t054">Preview: the form is not connected yet, nothing was sent</span></span></p></div><div class="ende-aktion"><button type="button" class="btn zart" data-neu><span data-i18n="t086">Start again</span></button></div></div></div></div></section>
 
-<section class="sek" id="faq"><h2><span data-i18n="t059">FAQ</span></h2><details><summary><span data-i18n="t093">How do I book?</span></summary><p><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t091">Answer about booking</span></span></p></details><details><summary><span data-i18n="t094">How do I pay?</span></summary><p><span data-i18n="t022">We'll get back to you with all the details on booking and payment.</span></p></details><details><summary><span data-i18n="t095">How do I get there?</span></summary><p><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t092">Answer about travel</span></span></p></details></section></main>
+<section class="sek" id="faq"><h2><span data-i18n="t059">FAQ</span></h2><details><summary><span data-i18n="t093">How do I book?</span></summary><p><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t091">Answer about booking</span></span></p></details><details><summary><span data-i18n="t094">How do I pay?</span></summary><p><span data-i18n="t022">We'll get back to you with all the details on booking and payment.</span></p></details><details><summary><span data-i18n="t095">How do I get there?</span></summary><p><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t092">Answer about travel</span></span></p></details></section>
+<section class="gw-anfragen gw-bereit" id="gw-anfragen" lang="de" data-anfragen aria-labelledby="gw-anfragen-t">
+  <div class="wrap">
+    <div class="gw-kopf">
+      <p class="nils-kicker">Schreib uns</p>
+      <h2 id="gw-anfragen-t">Was möchtest du uns sagen?</h2>
+      <p class="gw-lead">Such dir einen Weg aus. Felder mit * sind Pflicht. In dieser Voransicht wird noch nichts gesendet.</p>
+    </div>
+    <nav class="gw-tabs" role="tablist" aria-label="Anfragen">
+      <a class="gw-tab" role="tab" id="gw-tab-gaeste" href="#gw-gaeste" aria-controls="gw-gaeste" aria-selected="true" tabindex="0"><span class="gw-tab-titel">Gäste-Anfrage</span></a>
+      <a class="gw-tab" role="tab" id="gw-tab-haeuser" href="#gw-haeuser" aria-controls="gw-haeuser" aria-selected="false" tabindex="-1"><span class="gw-tab-titel">Hotels und Retreatorte</span></a>
+      <a class="gw-tab" role="tab" id="gw-tab-creator" href="#gw-creator" aria-controls="gw-creator" aria-selected="false" tabindex="-1"><span class="gw-tab-titel">Creator und Influencer</span></a>
+      <a class="gw-tab" role="tab" id="gw-tab-news" href="#gw-newsletter" aria-controls="gw-newsletter" aria-selected="false" tabindex="-1"><span class="gw-tab-titel">Newsletter</span></a>
+    </nav>
+
+    <div class="gw-panel ist-aktiv" role="tabpanel" id="gw-gaeste" aria-labelledby="gw-tab-gaeste">
+      <form data-vorschau-form novalidate onsubmit="event.preventDefault()" aria-labelledby="gw-gaeste-titel">
+        <h3 id="gw-gaeste-titel">Gäste-Anfrage</h3>
+        <p class="gw-einleitung">Drei kurze Fragen, danach Name, E-Mail und Land.</p>
+        <fieldset class="gw-frage" data-gruppe="auszeit" data-fehler="gw-gaeste-art-f" data-fehler-text="Bitte wähl, welche Art von Auszeit du suchst." aria-describedby="gw-gaeste-art-f" aria-required="true">
+          <legend>Welche Art von Auszeit suchst du? <span class="gw-sr">Pflichtfeld</span></legend>
+          <div class="gw-opts">
+            <label class="gw-opt"><input type="radio" name="gw-gaeste-art" value="feste-retreats" required> <span>Feste Retreats</span></label>
+            <label class="gw-opt"><input type="radio" name="gw-gaeste-art" value="eigene-auszeit"> <span>Eigene ruhige Auszeit</span></label>
+          </div>
+          <p class="gw-fehler" id="gw-gaeste-art-f" role="alert"></p>
+        </fieldset>
+        <fieldset class="gw-frage">
+          <legend>Wann und wie lange?</legend>
+          <div class="gw-felder">
+            <div class="gw-feld">
+              <label for="gw-gaeste-wann">Wann möchtest du los? <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+              <input id="gw-gaeste-wann" name="wann" type="text" autocomplete="off" required data-regel="pflicht" data-fehler-text="Bitte sag, wann du los möchtest." aria-describedby="gw-gaeste-wann-f">
+              <p class="gw-fehler" id="gw-gaeste-wann-f" role="alert"></p>
+            </div>
+            <div class="gw-feld">
+              <label for="gw-gaeste-dauer">Wie lange? <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+              <select id="gw-gaeste-dauer" name="dauer" required data-regel="wahl" data-fehler-text="Bitte wähl, wie lange du bleiben möchtest." aria-describedby="gw-gaeste-dauer-f">
+                <option value="">Bitte wählen</option>
+                <option>Ein langes Wochenende</option>
+                <option>Etwa eine Woche</option>
+                <option>Zwei Wochen oder länger</option>
+                <option>Noch offen</option>
+              </select>
+              <p class="gw-fehler" id="gw-gaeste-dauer-f" role="alert"></p>
+            </div>
+          </div>
+        </fieldset>
+        <div class="gw-feld">
+          <label for="gw-gaeste-danach">Was soll sich danach anders anfühlen? Was brauchst du gerade? <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+          <textarea id="gw-gaeste-danach" name="danach" rows="4" required data-regel="pflicht" data-fehler-text="Bitte schreib kurz, was du gerade brauchst." aria-describedby="gw-gaeste-danach-f"></textarea>
+          <p class="gw-fehler" id="gw-gaeste-danach-f" role="alert"></p>
+        </div>
+        <p class="gw-zwischen">So erreichen wir dich</p>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-gaeste-name">Dein Name <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-gaeste-name" name="name" type="text" autocomplete="name" required data-regel="pflicht" data-fehler-text="Bitte gib deinen Namen ein." aria-describedby="gw-gaeste-name-f">
+            <p class="gw-fehler" id="gw-gaeste-name-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-gaeste-email">Deine E-Mail <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-gaeste-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required data-regel="email" data-fehler-leer="Bitte gib deine E-Mail ein." data-fehler-text="Bitte gib eine gültige E-Mail-Adresse ein." aria-describedby="gw-gaeste-email-f">
+            <p class="gw-fehler" id="gw-gaeste-email-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-gaeste-land">Dein Land <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-gaeste-land" name="land" type="text" autocomplete="country-name" required data-regel="pflicht" data-fehler-text="Bitte gib dein Land ein." aria-describedby="gw-gaeste-land-f">
+            <p class="gw-fehler" id="gw-gaeste-land-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-check">
+          <input id="gw-gaeste-ds" name="datenschutz" type="checkbox" required data-regel="datenschutz" data-fehler-text="Bitte setz das Häkchen beim Datenschutz." aria-describedby="gw-gaeste-ds-f">
+          <label for="gw-gaeste-ds">Ich habe den <a href="#gw-datenschutz">Hinweis zum Datenschutz (Platzhalter)</a> gelesen und bin einverstanden, dass meine Angaben für die Antwort auf diese Anfrage verwendet werden.</label>
+        </div>
+        <p class="gw-fehler" id="gw-gaeste-ds-f" role="alert"></p>
+        <button type="submit" class="btn voll gw-senden">Anfrage abschicken</button>
+        <p class="gw-status" data-vorschau-hinweis role="status" tabindex="-1" hidden></p>
+      </form>
+    </div>
+
+    <div class="gw-panel" role="tabpanel" id="gw-haeuser" aria-labelledby="gw-tab-haeuser">
+      <form data-vorschau-form novalidate onsubmit="event.preventDefault()" aria-labelledby="gw-haus-titel">
+        <h3 id="gw-haus-titel">Anfrage für Hotels und Retreatorte</h3>
+        <p class="gw-einleitung">Stell dein Haus vor. Kurz und sachlich reicht.</p>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-haus-name">Name des Hauses <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-haus-name" name="haus" type="text" autocomplete="organization" required data-regel="pflicht" data-fehler-text="Bitte gib den Namen des Hauses ein." aria-describedby="gw-haus-name-f">
+            <p class="gw-fehler" id="gw-haus-name-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-haus-ort">Ort und Land <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-haus-ort" name="ort" type="text" autocomplete="off" required data-regel="pflicht" data-fehler-text="Bitte gib Ort und Land ein." aria-describedby="gw-haus-ort-f">
+            <p class="gw-fehler" id="gw-haus-ort-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-haus-art">Art des Hauses <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <select id="gw-haus-art" name="art" required data-regel="wahl" data-fehler-text="Bitte wähl die Art des Hauses." aria-describedby="gw-haus-art-f">
+              <option value="">Bitte wählen</option>
+              <option>Hotel</option>
+              <option>Retreatort</option>
+              <option>Gästehaus</option>
+              <option>Pension oder Lodge</option>
+              <option>Anderes</option>
+            </select>
+            <p class="gw-fehler" id="gw-haus-art-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-haus-zimmer">Anzahl der Zimmer <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-haus-zimmer" name="zimmer" type="number" inputmode="numeric" min="1" max="999" step="1" required data-regel="zimmer" data-fehler-text="Bitte gib die Anzahl der Zimmer an." aria-describedby="gw-haus-zimmer-f">
+            <p class="gw-fehler" id="gw-haus-zimmer-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-feld">
+          <label for="gw-haus-web">Website oder Instagram <span class="gw-optional">(optional)</span></label>
+          <input id="gw-haus-web" name="web" type="text" inputmode="url" spellcheck="false" autocomplete="url" data-regel="url-optional" data-fehler-text="Bitte prüf Website oder Instagram, oder lass das Feld leer." aria-describedby="gw-haus-web-f">
+          <p class="gw-fehler" id="gw-haus-web-f" role="alert"></p>
+        </div>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-haus-person">Ansprechperson <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-haus-person" name="person" type="text" autocomplete="name" required data-regel="pflicht" data-fehler-text="Bitte gib die Ansprechperson ein." aria-describedby="gw-haus-person-f">
+            <p class="gw-fehler" id="gw-haus-person-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-haus-email">E-Mail <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-haus-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required data-regel="email" data-fehler-leer="Bitte gib deine E-Mail ein." data-fehler-text="Bitte gib eine gültige E-Mail-Adresse ein." aria-describedby="gw-haus-email-f">
+            <p class="gw-fehler" id="gw-haus-email-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-feld">
+          <label for="gw-haus-nachricht">Nachricht <span class="gw-optional">(optional)</span></label>
+          <textarea id="gw-haus-nachricht" name="nachricht" rows="4"></textarea>
+        </div>
+        <div class="gw-check">
+          <input id="gw-haus-ds" name="datenschutz" type="checkbox" required data-regel="datenschutz" data-fehler-text="Bitte setz das Häkchen beim Datenschutz." aria-describedby="gw-haus-ds-f">
+          <label for="gw-haus-ds">Ich habe den <a href="#gw-datenschutz">Hinweis zum Datenschutz (Platzhalter)</a> gelesen und bin einverstanden, dass meine Angaben für die Antwort auf diese Anfrage verwendet werden.</label>
+        </div>
+        <p class="gw-fehler" id="gw-haus-ds-f" role="alert"></p>
+        <button type="submit" class="btn voll gw-senden">Anfrage abschicken</button>
+        <p class="gw-status" data-vorschau-hinweis role="status" tabindex="-1" hidden></p>
+      </form>
+    </div>
+
+    <div class="gw-panel" role="tabpanel" id="gw-creator" aria-labelledby="gw-tab-creator">
+      <form data-vorschau-form novalidate onsubmit="event.preventDefault()" aria-labelledby="gw-creator-titel">
+        <h3 id="gw-creator-titel">Bewerbung für Creator und Influencer</h3>
+        <p class="gw-einleitung">Erzähl kurz, wo du unterwegs bist und was du zeigst.</p>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-creator-name">Dein Name <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-name" name="name" type="text" autocomplete="name" required data-regel="pflicht" data-fehler-text="Bitte gib deinen Namen ein." aria-describedby="gw-creator-name-f">
+            <p class="gw-fehler" id="gw-creator-name-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-creator-handle">Dein Handle <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-handle" name="handle" type="text" autocomplete="nickname" required data-regel="pflicht" data-fehler-text="Bitte gib dein Handle ein." aria-describedby="gw-creator-handle-f">
+            <p class="gw-fehler" id="gw-creator-handle-f" role="alert"></p>
+          </div>
+        </div>
+        <fieldset class="gw-frage" data-gruppe="plattform" data-fehler="gw-creator-plattform-f" data-fehler-text="Bitte wähl mindestens eine Plattform." aria-describedby="gw-creator-plattform-f" aria-required="true">
+          <legend>Plattformen <span class="gw-sr">Pflichtfeld, mindestens eine</span></legend>
+          <div class="gw-opts">
+            <label class="gw-opt"><input type="checkbox" name="gw-creator-plattform" value="instagram"> <span>Instagram</span></label>
+            <label class="gw-opt"><input type="checkbox" name="gw-creator-plattform" value="youtube"> <span>YouTube</span></label>
+            <label class="gw-opt"><input type="checkbox" name="gw-creator-plattform" value="tiktok"> <span>TikTok</span></label>
+            <label class="gw-opt"><input type="checkbox" name="gw-creator-plattform" value="blog"> <span>Blog oder Newsletter</span></label>
+            <label class="gw-opt"><input type="checkbox" name="gw-creator-plattform" value="andere"> <span>Andere</span></label>
+          </div>
+          <p class="gw-fehler" id="gw-creator-plattform-f" role="alert"></p>
+        </fieldset>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-creator-follower">Ungefähre Followerzahl <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-follower" name="follower" type="text" inputmode="numeric" autocomplete="off" required data-regel="pflicht" data-fehler-text="Bitte gib deine ungefähre Followerzahl an." aria-describedby="gw-creator-follower-f">
+            <p class="gw-fehler" id="gw-creator-follower-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-creator-nische">Nische <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-nische" name="nische" type="text" autocomplete="off" required data-regel="pflicht" data-fehler-text="Bitte schreib, worum es bei dir geht." aria-describedby="gw-creator-nische-f">
+            <p class="gw-fehler" id="gw-creator-nische-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-creator-sprachen">Sprachen <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-sprachen" name="sprachen" type="text" autocomplete="off" required data-regel="pflicht" data-fehler-text="Bitte gib die Sprachen an, die du sprichst." aria-describedby="gw-creator-sprachen-f">
+            <p class="gw-fehler" id="gw-creator-sprachen-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-creator-link">Link zu Beispielen <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-creator-link" name="beispiele" type="url" inputmode="url" spellcheck="false" autocomplete="url" required data-regel="url" data-fehler-text="Bitte setz einen Link zu Beispielen." aria-describedby="gw-creator-link-f">
+            <p class="gw-fehler" id="gw-creator-link-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-feld">
+          <label for="gw-creator-nachricht">Nachricht <span class="gw-optional">(optional)</span></label>
+          <textarea id="gw-creator-nachricht" name="nachricht" rows="4"></textarea>
+        </div>
+        <div class="gw-check">
+          <input id="gw-creator-ds" name="datenschutz" type="checkbox" required data-regel="datenschutz" data-fehler-text="Bitte setz das Häkchen beim Datenschutz." aria-describedby="gw-creator-ds-f">
+          <label for="gw-creator-ds">Ich habe den <a href="#gw-datenschutz">Hinweis zum Datenschutz (Platzhalter)</a> gelesen und bin einverstanden, dass meine Angaben für die Antwort auf diese Bewerbung verwendet werden.</label>
+        </div>
+        <p class="gw-fehler" id="gw-creator-ds-f" role="alert"></p>
+        <button type="submit" class="btn voll gw-senden">Bewerbung abschicken</button>
+        <p class="gw-status" data-vorschau-hinweis role="status" tabindex="-1" hidden></p>
+      </form>
+    </div>
+
+    <div class="gw-panel" role="tabpanel" id="gw-newsletter" aria-labelledby="gw-tab-news">
+      <form data-vorschau-form novalidate onsubmit="event.preventDefault()" aria-labelledby="gw-news-titel">
+        <h3 id="gw-news-titel">Newsletter</h3>
+        <p class="gw-doppel">Double-Opt-in: Zuerst kommt eine E-Mail an dich. Erst wenn du den Link darin öffnest, bist du eingetragen. In dieser Voransicht wird noch keine E-Mail verschickt.</p>
+        <div class="gw-felder">
+          <div class="gw-feld">
+            <label for="gw-news-email">Deine E-Mail <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-news-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required data-regel="email" data-fehler-leer="Bitte gib deine E-Mail ein." data-fehler-text="Bitte gib eine gültige E-Mail-Adresse ein." aria-describedby="gw-news-email-f">
+            <p class="gw-fehler" id="gw-news-email-f" role="alert"></p>
+          </div>
+          <div class="gw-feld">
+            <label for="gw-news-vorname">Dein Vorname <span class="gw-stern" aria-hidden="true">*</span> <span class="gw-sr">Pflichtfeld</span></label>
+            <input id="gw-news-vorname" name="vorname" type="text" autocomplete="given-name" required data-regel="pflicht" data-fehler-text="Bitte gib deinen Vornamen ein." aria-describedby="gw-news-vorname-f">
+            <p class="gw-fehler" id="gw-news-vorname-f" role="alert"></p>
+          </div>
+        </div>
+        <div class="gw-check">
+          <input id="gw-news-ds" name="datenschutz" type="checkbox" required data-regel="datenschutz" data-fehler-text="Bitte setz das Häkchen beim Datenschutz." aria-describedby="gw-news-ds-f">
+          <label for="gw-news-ds">Ich möchte den Newsletter bekommen, habe den <a href="#gw-datenschutz">Hinweis zum Datenschutz (Platzhalter)</a> gelesen und bin einverstanden.</label>
+        </div>
+        <p class="gw-fehler" id="gw-news-ds-f" role="alert"></p>
+        <button type="submit" class="btn voll gw-senden">Eintragen</button>
+        <p class="gw-status" data-vorschau-hinweis role="status" tabindex="-1" hidden></p>
+      </form>
+    </div>
+
+    <p class="gw-platzhalter" id="gw-datenschutz"><span class="gw-platzhalter-m">Platzhalter</span> Datenschutzerklärung. Verantwortlich: Thomas Malyska, Fotomek, thomas@malyska.de. Der vollständige Text folgt. In dieser Voransicht werden keine Angaben gespeichert oder versendet.</p>
+  </div>
+</section>
+
+</main>
 <footer class="fuss"><div class="wrap"><p class="claim">New leaders. New places. Drop in.</p><ul>
 <li><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t191">Imprint</span></span></li><li><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t192">Privacy policy</span></span></li><li><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t193">Advertising disclosure</span></span></li><li><span class="ph"><span class="ph-m"><span data-i18n="ph">Placeholder</span></span> <span data-i18n="t194">Area for centers</span></span></li></ul>
 <p class="klein"><span data-i18n="t134">Gatherwynd retreats are time out, not medical or psychological treatment. They do not replace a doctor or therapist.</span></p><p class="klein"><span data-i18n="t195">Photos: Pexels (Pexels License), photographer named on each image. All photos are symbol photos.</span></p>
@@ -201,4 +541,5 @@ document.getElementById('mf-kanal-weiter').addEventListener('click',function(){v
 fragen.forEach(function(q){q.querySelector('[data-weiter]').disabled=true;});
 var l0='en';try{l0=localStorage.getItem(KL)||'en';}catch(e){}
 zeige('frage-1',false);setzeSprache(l0);
-})();</script></body></html>
+})();</script><script src="assets/anfragen.js"></script>
+</body></html>

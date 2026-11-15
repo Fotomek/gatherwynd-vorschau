@@ -13,3 +13,17 @@ Hinweis auf der Seite: „Auswahl, keine Partnerschaft“. Keine Fotos der Häus
 | Vive Luquina | https://www.viveluquina.com/ | Luquina Chico, Chucuito, 22 km von Puno, eigenes Bad, Frühstück/Mittag/Abend | |
 | Rancho Quemado (ADIRQ) | https://www.visitranchoquemado.com/en/hospedaje | rustikale Hütten, familiäre Posadas, ADIRQ | |
 | Parque de la Papa (Peru Travel) | https://www.peru.travel/experiences/parque-de-la-papa | Písac, Cusco; Unterkunft, Essen, Orientierung; empfohlen ganzer Tag | „Übernachtung nicht gesichert“ ersetzt |
+
+## Preise und Detailangaben Portal (geprüft 15.11.2026 ca. 17:50 Berlin)
+| Haus | Preis belegt | Quelle |
+|---|---|---|
+| Anamaya | ja: 7 Nächte inkl. Mahlzeiten p. P., Mehrbett 895/1.295, Queen-Doppel 1.295/1.595, King-Doppel 1.395/1.895, King-Einzel 1.995/2.595 USD (Neben-/Hauptsaison), zzgl. 13 % Steuer; 14 Zimmer | https://www.anamaya.com/rates/ |
+| Blue Osa | ja: Pakete 1.440 USD (4 Tage) bis 2.300 USD (Woche); Anreise SJO | https://www.blueosa.com/ (FAQ) |
+| Pura Vida | ja: Nacht ab 184 USD p. P. inkl. 3 Mahlzeiten; 3/5/7 Nächte ab 974/1.536/2.010 USD; Transfer 20 USD | https://puravidaspa.com/costa-rica-retreat-rates-packages/ |
+| Willka T’ika | nein (nur PDF auf Drittplattform wetu, nicht offiziell, nicht verwendet) | https://willkatika.com/ |
+| The Retreat CR | nein (nur „priceRange $ 328.50“ im Schema ohne Einheit, nicht verwendet) | https://www.theretreatcostarica.com/ |
+| Niños Hotel | ja: Durchschnitt 40 bis 140 USD pro Nacht (Schema priceRange der Seite) | https://ninoshotel.com/en |
+| Amantaní | nein | Peru Travel |
+| Vive Luquina | nein | https://www.viveluquina.com/ |
+| Rancho Quemado | nein (Essen gegen Aufpreis) | https://www.visitranchoquemado.com/en/hospedaje |
+| Parque de la Papa | nein | Peru Travel |

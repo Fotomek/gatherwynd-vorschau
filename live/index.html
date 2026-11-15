@@ -325,6 +325,34 @@ a{color:inherit}
 .kontakt-knoepfe{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
 .sprache{display:flex;gap:6px;align-items:center;color:#fff;font-size:14px;opacity:.92}.sprache a{padding:4px 2px}.sprache a[aria-current]{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 @media (max-width:820px){.nav ul li.sprache{padding:10px 20px}.nav ul li.sprache a{display:inline;padding:4px 6px}}
+
+.portal{padding:96px 0 80px;background:var(--weiss)}
+.portal h2{font:480 clamp(34px,4.2vw,58px)/1.05 var(--kopf);letter-spacing:-.01em;margin:0 0 14px}
+.portal .lead{color:var(--ink-2);max-width:700px;margin:0 0 26px}
+.filter{display:grid;gap:12px;margin:0 0 18px;padding:18px 20px;background:var(--flaeche-2);border:1px solid var(--linie);border-radius:8px}
+.filter-gruppe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter-gruppe>span{font:600 12px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--wald);min-width:64px}
+.chip{font:500 14.5px/1 var(--text);padding:10px 14px;min-height:40px;border-radius:999px;border:1px solid #C5C8C4;background:#fff;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--wald);border-color:var(--wald);color:#fff}
+.anzahl{font-size:14px;color:var(--ink-3);margin:0 0 18px}
+.portal-raster{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.angebot{border:1px solid var(--linie);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s}
+.angebot:hover,.angebot:focus-visible{box-shadow:0 10px 30px rgba(20,22,21,.12);transform:translateY(-2px);outline:none}
+.angebot figure{margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--flaeche-2)}
+.angebot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.angebot .inhalt{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.angebot .tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font:600 11px/1 var(--text);letter-spacing:.1em;text-transform:uppercase;color:var(--wald);background:#EDF3EF;padding:6px 8px;border-radius:4px}
+.tag.preis{color:var(--ink);background:#FBF6DE}
+.angebot h3{font:480 24px/1.15 var(--kopf);margin:6px 0 0}
+.angebot .ort{margin:0;color:var(--ink-3);font-size:14.5px}
+.angebot .text{margin:4px 0 0;color:var(--ink-2);font-size:15px}
+.angebot .mehr{margin-top:auto;padding-top:12px;font:600 14.5px/1 var(--text);color:var(--wald)}
+.portal .haeuser-hinweis{margin:28px 0 0}
+.leer{padding:20px;border:1px dashed var(--linie);border-radius:8px;color:var(--ink-2)}
+@media (max-width:980px){.portal-raster{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.portal-raster{grid-template-columns:1fr}.portal{padding:64px 0}.filter-gruppe>span{min-width:100%}}
+.portal [hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -336,10 +364,10 @@ a{color:inherit}
     <a href="#top" aria-label="Gatherwynd"><img class="logo" src="assets/logo/wortbildmarke-dunkel.svg" alt="Gatherwynd" width="220" height="72"></a>
     <button class="burger" type="button" aria-expanded="false" aria-controls="nav-liste" aria-label="Abrir menú"><span></span></button>
     <ul id="nav-liste">
+      <li><a href="#haeuser">Casas</a></li>
       <li><a href="#hotels">Para hoteles</a></li>
       <li><a href="#gaeste">Para huéspedes</a></li>
       <li><a href="#orte">Lugares</a></li>
-      <li><a href="#haeuser">Casas</a></li>
       <li><a href="#nils">Quiénes somos</a></li>
       <li class="sprache" aria-label="Idioma"><a href="./" hreflang="es" lang="es" aria-current="page">ES</a> | <a href="de/" hreflang="de" lang="de">DE</a> | <a href="en/" hreflang="en" lang="en">EN</a></li>
       <li><a class="klein" href="#gw-anfragen">Contacto</a></li>
@@ -369,6 +397,73 @@ a{color:inherit}
 </header>
 
 <main>
+<section class="portal abschnitt" id="haeuser">
+  <div class="wrap" id="portal">
+    <p class="nils-kicker">Casas y lugares</p>
+    <h2>Diez casas y lugares en Perú y Costa Rica</h2>
+    <p class="lead">Pequeños retiros, hoteles y propuestas comunitarias de nuestra investigación. Filtra por país, tipo y precio y abre cada oferta para ver los detalles.</p>
+    <div class="filter" hidden>
+      <div class="filter-gruppe" role="group" aria-label="País"><span>País</span><button type="button" class="chip" data-gruppe="land" data-wert="alle" aria-pressed="true">Todos</button><button type="button" class="chip" data-gruppe="land" data-wert="pe" aria-pressed="false">Perú</button><button type="button" class="chip" data-gruppe="land" data-wert="cr" aria-pressed="false">Costa Rica</button></div>
+      <div class="filter-gruppe" role="group" aria-label="Tipo"><span>Tipo</span><button type="button" class="chip" data-gruppe="art" data-wert="alle" aria-pressed="true">Todos</button><button type="button" class="chip" data-gruppe="art" data-wert="retreat" aria-pressed="false">Retiro</button><button type="button" class="chip" data-gruppe="art" data-wert="hotel" aria-pressed="false">Hotel</button><button type="button" class="chip" data-gruppe="art" data-wert="gemeinschaft" aria-pressed="false">Turismo comunitario</button></div>
+      <div class="filter-gruppe" role="group" aria-label="Precio"><span>Precio</span><button type="button" class="chip" data-gruppe="preis" data-wert="alle" aria-pressed="true">Todos</button><button type="button" class="chip" data-gruppe="preis" data-wert="guenstig" aria-pressed="false">Hasta 150 USD por noche</button><button type="button" class="chip" data-gruppe="preis" data-wert="mittel" aria-pressed="false">150 a 300 USD por noche</button><button type="button" class="chip" data-gruppe="preis" data-wert="paket" aria-pressed="false">Paquetes desde 900 USD</button><button type="button" class="chip" data-gruppe="preis" data-wert="keine" aria-pressed="false">Precio en la casa</button></div>
+    </div>
+    <p class="anzahl" aria-live="polite" data-tpl="{n} de 10 ofertas">10 de 10 ofertas</p>
+    <div class="portal-raster">
+      <a class="angebot" href="haus/anamaya.html" data-land="cr" data-art="retreat" data-preis="paket">
+        <figure><img src="assets/bilder/regionen/px-11181983-640.webp" alt="Vista aérea de una bahía del Pacífico con selva en la costa de Costa Rica" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Retiro</span><span class="tag preis">Paquetes desde 900 USD</span></div>
+          <h3>Anamaya Resort</h3><p class="ort">Sobre Montezuma, sur de la península de Nicoya</p><p class="text">Centro de retiro en la selva con vista al mar. Comida orgánica, piscina de agua salada, spa y yoga diario.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/blue-osa.html" data-land="cr" data-art="retreat" data-preis="paket">
+        <figure><img src="assets/bilder/regionen/px-919494-640.webp" alt="Playa con árboles en la luz dorada de la tarde, provincia de Puntarenas" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Retiro</span><span class="tag preis">Paquetes desde 900 USD</span></div>
+          <h3>Blue Osa Yoga Retreat + Spa</h3><p class="ort">Playa Tamales, Puerto Jiménez, península de Osa</p><p class="text">Frente a la playa en la península de Osa. 13 habitaciones para hasta 36 huéspedes, cocina con productos de su finca.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/pura-vida.html" data-land="cr" data-art="retreat" data-preis="mittel">
+        <figure><img src="assets/bilder/regionen/px-14624137-640.webp" alt="Prado verde sobre un mar de nubes en las tierras altas de Costa Rica" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Retiro</span><span class="tag preis">150 a 300 USD por noche</span></div>
+          <h3>Pura Vida Retreat &amp; Spa</h3><p class="ort">Pavas, Carrizal, Alajuela</p><p class="text">En lo alto del Valle Central, a unos 25 minutos del aeropuerto de San José. Tres comidas al día en la tarifa por noche.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/willka-tika.html" data-land="pe" data-art="retreat" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-38382390-640.webp" alt="Vista aérea del Valle Sagrado con terrazas y montañas cerca de Cusco" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Retiro</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>Willka T’ika</h3><p class="ort">Valle Sagrado, cerca de Urubamba</p><p class="text">Casa gestionada desde 1994 entre Cusco y Machu Picchu. 35 habitaciones, cocina vegetariana de sus propios huertos.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/the-retreat.html" data-land="cr" data-art="hotel" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-19155571-640.webp" alt="Colinas verdes y bosques en Costa Rica" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Hotel</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>The Retreat Costa Rica</h3><p class="ort">Barrio Jesús, Atenas, Alajuela</p><p class="text">Hotel de bienestar con 25 habitaciones y vista al Pacífico. Tres comidas y yoga dos veces al día incluidos.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/ninos-hotel.html" data-land="pe" data-art="hotel" data-preis="guenstig">
+        <figure><img src="assets/bilder/regionen/px-38429521-640.webp" alt="Patio soleado con arcos de piedra y flores en Cusco" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Hotel</span><span class="tag preis">Hasta 150 USD por noche</span></div>
+          <h3>Niños Hotel</h3><p class="ort">Cusco, Calle Meloc 148 y Calle Fierro 476</p><p class="text">Dos casas en Cusco con restaurante y tienda. Según la casa, cada estancia apoya a una fundación.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/amantani.html" data-land="pe" data-art="gemeinschaft" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-16881400-640.webp" alt="Vista aérea de una pequeña isla con casas en el lago Titicaca" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Turismo comunitario</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>Turismo comunitario Amantaní</h3><p class="ort">Isla Amantaní, lago Titicaca, región Puno</p><p class="text">Turismo comunitario en una de las islas más grandes del lago Titicaca. Se recomiendan dos días y una noche.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/vive-luquina.html" data-land="pe" data-art="gemeinschaft" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-19032103-640.webp" alt="Casas de totora a orillas del lago Titicaca cerca de Puno" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Turismo comunitario</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>Vive Luquina</h3><p class="ort">Luquina Chico, Chucuito, Puno</p><p class="text">Turismo comunitario en el lago Titicaca, a 22 kilómetros de Puno. Habitaciones con baño privado y tres comidas.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/rancho-quemado.html" data-land="cr" data-art="gemeinschaft" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-29497131-640.webp" alt="Río con piedras en un bosque verde" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Turismo comunitario</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>Rancho Quemado</h3><p class="ort">En el interior de la península de Osa</p><p class="text">Turismo rural comunitario de la comunidad local (ADIRQ). Cabinas rústicas y posadas familiares.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+      <a class="angebot" href="haus/parque-de-la-papa.html" data-land="pe" data-art="gemeinschaft" data-preis="keine">
+        <figure><img src="assets/bilder/regionen/px-39608872-640.webp" alt="Antiguas terrazas cerca de Pisac en el Valle Sagrado" width="640" height="480" loading="lazy"><span class="bildlabel">Imagen de ejemplo · Pexels</span></figure>
+        <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Turismo comunitario</span><span class="tag preis">Precio en la casa</span></div>
+          <h3>Parque de la Papa</h3><p class="ort">Pisac, región Cusco</p><p class="text">Propuesta comunitaria en torno al cultivo tradicional y las papas nativas. Se recomienda un día completo.</p><span class="mehr">Ver detalles ›</span></div>
+      </a>
+    </div>
+    <p class="leer" hidden>Ninguna oferta coincide con este filtro.</p>
+    <div class="haeuser-hinweis"><p><strong>Una selección, no una alianza.</strong> Las casas no son socias de Gatherwynd. Aquí no se puede reservar nada. Todos los datos provienen de las webs oficiales de las casas (a fecha de 15.11.2026).</p><p>Las fotos son imágenes de ejemplo de la región de Pexels, no fotos de las casas.</p></div>
+  </div>
+</section>
 <section class="hotels abschnitt" id="hotels">
   <div class="wrap">
     <p class="nils-kicker">Para casas</p>
@@ -551,125 +646,6 @@ a{color:inherit}
 </section>
 
 
-<section class="haeuser abschnitt" id="haeuser">
-  <div class="wrap">
-    <p class="nils-kicker">Selección</p>
-    <h2>Diez casas y lugares en Perú y Costa Rica</h2>
-    <p class="lead">Pequeños retiros, hoteles y propuestas comunitarias de nuestra investigación. Nils quiere conocerlos antes de grabar y mostrar más.</p>
-    <div class="haeuser-hinweis">
-      <p><strong>Una selección, no una alianza.</strong> Las casas no son socias de Gatherwynd. Aquí no se puede reservar nada.</p>
-      <p>Las tarjetas solo recogen datos de las webs oficiales de las casas (noviembre de 2026). Mostraremos fotos de las casas solo cuando lo permitan. Cada tarjeta lleva a la fuente oficial.</p>
-    </div>
-
-    <p class="prio-kicker">Retiros y hoteles</p>
-    <div class="haeuser-raster">
-      <article class="haus">
-        <div class="kopf costarica"><span class="typ">Retiro</span></div>
-        <div class="inhalt">
-          <span class="marke">Costa Rica</span>
-          <h3>Anamaya Resort</h3>
-          <p class="land">Sobre Montezuma, sur de la península de Nicoya</p>
-          <p class="text">Centro de retiro en la selva sobre Montezuma, con vista al mar. Comida orgánica, piscina de agua salada, spa y yoga diario.</p>
-          <a class="quelle-link" href="https://www.anamaya.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf costarica"><span class="typ">Retiro</span></div>
-        <div class="inhalt">
-          <span class="marke">Costa Rica</span>
-          <h3>Blue Osa Yoga Retreat y Spa</h3>
-          <p class="land">Playa Tamales, Puerto Jiménez, península de Osa</p>
-          <p class="text">Frente a la playa en la península de Osa. 13 habitaciones para hasta 36 huéspedes y una cocina con productos de su propia finca.</p>
-          <a class="quelle-link" href="https://www.blueosa.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf costarica"><span class="typ">Retiro</span></div>
-        <div class="inhalt">
-          <span class="marke">Costa Rica</span>
-          <h3>Pura Vida Retreat y Spa</h3>
-          <p class="land">Pavas, Carrizal, Alajuela</p>
-          <p class="text">En lo alto del Valle Central, a unos 25 minutos del aeropuerto de San José. Suites, una villa, habitaciones con vista y tiendas lodge. La tarifa por noche incluye tres comidas al día.</p>
-          <a class="quelle-link" href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf peru"><span class="typ">Retiro</span></div>
-        <div class="inhalt">
-          <span class="marke">Perú</span>
-          <h3>Willka T’ika</h3>
-          <p class="land">Valle Sagrado, cerca de Urubamba</p>
-          <p class="text">Casa gestionada desde 1994 en el Valle Sagrado, entre Cusco y Machu Picchu. 35 habitaciones para hasta 65 huéspedes, cocina vegetariana de sus propios huertos.</p>
-          <a class="quelle-link" href="https://willkatika.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf costarica"><span class="typ">Hotel de bienestar</span></div>
-        <div class="inhalt">
-          <span class="marke">Costa Rica</span>
-          <h3>The Retreat Costa Rica</h3>
-          <p class="land">Barrio Jesús, Atenas, Alajuela</p>
-          <p class="text">Hotel de bienestar con 25 habitaciones y vista hasta el Pacífico. Tres comidas al día y yoga dos veces al día están incluidos en la estancia.</p>
-          <a class="quelle-link" href="https://www.theretreatcostarica.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf peru"><span class="typ">Hotel</span></div>
-        <div class="inhalt">
-          <span class="marke">Perú</span>
-          <h3>Niños Hotel</h3>
-          <p class="land">Cusco, Calle Meloc 148 y Calle Fierro 476</p>
-          <p class="text">Dos casas en el centro de Cusco con restaurante y tienda. Según el operador, cada estancia apoya a la fundación Niños Unidos Peruanos.</p>
-          <a class="quelle-link" href="https://ninoshotel.com/en" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-    </div>
-
-    <p class="prio-kicker spaeter">Turismo comunitario</p>
-    <div class="haeuser-raster">
-      <article class="haus">
-        <div class="kopf peru"><span class="typ">Turismo comunitario</span></div>
-        <div class="inhalt">
-          <span class="marke">Perú</span>
-          <h3>Turismo comunitario Amantaní</h3>
-          <p class="land">Isla Amantaní, lago Titicaca, región Puno</p>
-          <p class="text">Turismo comunitario en la isla Amantaní, presentado por el portal oficial Peru Travel. Alojamiento y comida a través de asociaciones locales; se recomiendan dos días y una noche.</p>
-          <a class="quelle-link" href="https://www.peru.travel/experiences/community-tourism-in-amantani" target="_blank" rel="noopener noreferrer">A la fuente (Peru Travel)</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf peru"><span class="typ">Turismo comunitario</span></div>
-        <div class="inhalt">
-          <span class="marke">Perú</span>
-          <h3>Vive Luquina</h3>
-          <p class="land">Luquina Chico, Chucuito, Puno</p>
-          <p class="text">Turismo comunitario en el lago Titicaca, a 22 kilómetros de Puno. Habitaciones con baño privado, desayuno, almuerzo y cena.</p>
-          <a class="quelle-link" href="https://www.viveluquina.com/" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf costarica"><span class="typ">Turismo comunitario</span></div>
-        <div class="inhalt">
-          <span class="marke">Costa Rica</span>
-          <h3>Rancho Quemado</h3>
-          <p class="land">En el interior de la península de Osa</p>
-          <p class="text">Cabinas rústicas y posadas familiares de la comunidad local (ADIRQ). El confort varía de una casa a otra.</p>
-          <a class="quelle-link" href="https://www.visitranchoquemado.com/en/hospedaje" target="_blank" rel="noopener noreferrer">A la web oficial</a>
-        </div>
-      </article>
-      <article class="haus">
-        <div class="kopf peru"><span class="typ">Propuesta comunitaria</span></div>
-        <div class="inhalt">
-          <span class="marke">Perú</span>
-          <h3>Parque de la Papa</h3>
-          <p class="land">Pisac, región Cusco</p>
-          <p class="text">Propuesta comunitaria en torno al cultivo tradicional y las variedades nativas de papa. Según Peru Travel hay alojamiento, comida y orientación en el lugar; se recomienda un día completo.</p>
-          <a class="quelle-link" href="https://www.peru.travel/experiences/parque-de-la-papa" target="_blank" rel="noopener noreferrer">A la fuente (Peru Travel)</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="wer abschnitt" id="nils">
   <div class="wrap">
@@ -736,6 +712,7 @@ a{color:inherit}
     <h2 id="gw-anfragen-t">¿Qué quieres contarnos?</h2>
     <p class="gw-lead">Escríbele directamente a Nils. Para huéspedes, para hoteles y lugares de retiro y para creadores. Cuéntanos brevemente quién eres y qué buscas.</p>
     <p class="kontakt-knoepfe">
+      <a class="knopf k-orange-hell" href="https://wa.me/34612252870" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a class="knopf k-orange-hell" href="mailto:info@gatherwynd.com">info@gatherwynd.com</a>
     </p>
     <p class="klein">Si nos escribes, usamos tus datos solo para responderte. Más información en la <a href="datenschutz.html">política de privacidad</a>.</p>
@@ -751,6 +728,7 @@ a{color:inherit}
       <p class="fuss-hinweis">Una pausa con Gatherwynd no es un tratamiento médico ni psicológico. No sustituye a un médico ni a una terapia. Es tiempo.</p>
     </div>
     <p class="klein">Video de fondo: loop gratuito de Mixkit. Fotos: Matheus Bertelli, Denner Trindade, Dmitry Alexandrovich, Justin Wolfert, Robert So, alleksana, hi room, Pew Nguyen / Pexels (fotos de archivo). Retrato y entrevista: Nils. Las imágenes de ejemplo y de IA están señaladas debajo de cada zona de imágenes. Tipografías Fraunces y Archivo (SIL OFL).</p>
+    <p class="klein"><a href="https://wa.me/34612252870" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="mailto:info@gatherwynd.com">info@gatherwynd.com</a></p>
     <p class="klein"><a href="impressum.html">Aviso legal</a> · <a href="datenschutz.html">política de privacidad</a></p>
   </div>
 </footer>
@@ -794,6 +772,13 @@ a{color:inherit}
   lade(ziel);
   if (ander) ander.removeAttribute('autoplay');
 })();
+</script>
+<script>
+(function(){var r=document.getElementById('portal');if(!r)return;var f={land:'alle',art:'alle',preis:'alle'};
+var karten=[].slice.call(r.querySelectorAll('.angebot')),z=r.querySelector('.anzahl'),leer=r.querySelector('.leer'),tpl=z.getAttribute('data-tpl');
+function los(){var n=0;karten.forEach(function(k){var ok=['land','art','preis'].every(function(g){return f[g]==='alle'||k.getAttribute('data-'+g)===f[g]});k.hidden=!ok;if(ok)n++});z.textContent=tpl.replace('{n}',n);leer.hidden=n>0}
+r.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){var g=c.getAttribute('data-gruppe');f[g]=c.getAttribute('data-wert');r.querySelectorAll('.chip[data-gruppe="'+g+'"]').forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});los()})});
+r.querySelector('.filter').hidden=false;los()})();
 </script>
 <script src="assets/anfragen.js"></script>
 </body>

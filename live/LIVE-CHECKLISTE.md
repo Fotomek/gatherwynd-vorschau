@@ -20,3 +20,5 @@ Vorbereitet 15.11.2026 Berlin. Grundlage: version-4, Freigabe Nils 15.11. 14:26,
 2. Inhalt von live/ (index.html, impressum.html, datenschutz.html, assets/) per SFTP ins IONOS-Webspace-Verzeichnis von gatherwynd.com hochladen. Alternative: Domain per CNAME/A auf GitHub Pages (DNS-Änderung, nur mit Thomas' OK).
 3. SSL-Zertifikat für gatherwynd.com und www aktivieren, HTTPS erzwingen, www auf Hauptdomain weiterleiten.
 4. Live prüfen: HTTPS, Impressum, Datenschutz, Kontaktknöpfe, Videos.
+
+- [ ] **Vor IONOS-Go-live: Bildrechte bei den Häusern einholen.** Karten und Detailseiten zeigen seit 15.11.2026 Originalfotos von den Websites der 10 Häuser bzw. von Peru Travel (PromPerú). Schriftliche Erlaubnis je Haus einholen oder Fotos ersetzen. Quellen: quellen-haeuser.md.

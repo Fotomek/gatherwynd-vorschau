@@ -48,6 +48,11 @@ h1{font:480 clamp(36px,5vw,60px)/1.05 var(--kopf);margin:18px 0 6px;letter-spaci
 .knopf.rand{background:transparent;color:var(--wald);border:1px solid var(--wald)}
 .hinweis{margin:30px 0 0;padding:18px 22px;border-left:3px solid var(--gold);background:var(--flaeche);border-radius:0 8px 8px 0;color:var(--ink-2);font-size:15.5px}.hinweis p{margin:0 0 6px}
 .galerie h2{font:480 30px/1.2 var(--kopf);margin:48px 0 14px}.gal{display:grid;grid-template-columns:1fr 1fr;gap:16px}.gal figure{margin:0;position:relative;aspect-ratio:4/3;border-radius:8px;overflow:hidden}.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero{margin:0 0 6px}.hero .r{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:21/9;background:var(--flaeche)}.hero .r img,.gal .r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+figcaption{font-size:12.5px;color:var(--ink-3);margin:6px 0 0}figcaption a{color:var(--wald)}
+.gal{grid-template-columns:repeat(3,1fr)!important}.gal figure{aspect-ratio:auto!important;overflow:visible!important;border-radius:0!important}.gal .r{position:relative;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:var(--flaeche)}
+@media (max-width:820px){.hero .r{aspect-ratio:4/3}.gal{grid-template-columns:1fr 1fr!important}}
+@media (max-width:480px){.gal{grid-template-columns:1fr!important}}
 .bilder{display:grid;gap:12px;margin:0 0 6px;height:440px}.bilder.n2{grid-template-columns:1.6fr 1fr}.bilder.n3{grid-template-columns:1.6fr 1fr;grid-template-rows:1fr 1fr}.bilder.n3 figure:first-child{grid-row:1/3}
 .bilder figure{margin:0;position:relative;border-radius:10px;overflow:hidden;background:var(--flaeche)}.bilder img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ki{font:600 11px/1.45 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:10px 0 0}
@@ -64,8 +69,7 @@ footer{margin-top:64px;background:var(--nacht);color:#B9BCB8;font-size:14px;padd
 </div></header>
 <main class="wrap">
   <p class="krume"><a href="../">Inicio</a> › <a href="../#haeuser">Todas las casas</a> › Pura Vida Retreat &amp; Spa</p>
-  <div class="bilder n2"><figure><img src="../assets/bilder/regionen/px-14624137-1200.webp" alt="Prado verde sobre un mar de nubes en las tierras altas de Costa Rica" width="1200" height="900"><span class="label">Imagen de ejemplo · Pexels</span></figure><figure><img src="../assets/bilder/regionen/px-14714541-1200.webp" alt="Montañas verdes bajo las nubes en Costa Rica" width="1200" height="900" loading="lazy"><span class="label">Imagen de ejemplo · Pexels</span></figure></div>
-  <p class="ki">Imágenes de ejemplo de la región de Pexels. No muestran la casa.</p>
+  <figure class="hero"><div class="r"><img src="../assets/bilder/haeuser/pura-vida-1-1200.webp" alt="Piscina en el bosque" width="750" height="422"></div><figcaption>Foto: Pura Vida Retreat &amp; Spa, <a href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">puravidaspa.com</a></figcaption></figure>
   <h1>Pura Vida Retreat &amp; Spa</h1>
   <p class="ortzeile">Pavas, Carrizal, Alajuela</p>
   <div class="tags"><span class="tag">Costa Rica</span><span class="tag">Retiro</span><span class="tag preis">150 a 300 USD por noche</span></div>
@@ -82,6 +86,7 @@ footer{margin-top:64px;background:var(--nacht);color:#B9BCB8;font-size:14px;padd
       <div class="hinweis"><p><strong>Una selección, no una alianza.</strong> Las casas no son socias de Gatherwynd. Aquí no se puede reservar nada. Todos los datos provienen de las webs oficiales de las casas (a fecha de 15.11.2026).</p></div>
     </aside>
   </div>
+  <section class="galerie"><h2>Más imágenes</h2><div class="gal"><figure><div class="r"><img src="../assets/bilder/haeuser/pura-vida-2-1200.webp" alt="Jardín tropical" width="1200" height="800" loading="lazy"></div><figcaption>Foto: Pura Vida Retreat &amp; Spa, <a href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">puravidaspa.com</a></figcaption></figure><figure><div class="r"><img src="../assets/bilder/haeuser/pura-vida-3-1200.webp" alt="Piscina frente a una casa de huéspedes" width="1200" height="800" loading="lazy"></div><figcaption>Foto: Pura Vida Retreat &amp; Spa, <a href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">puravidaspa.com</a></figcaption></figure><figure><div class="r"><img src="../assets/bilder/haeuser/pura-vida-4-1200.webp" alt="Cielo de tarde sobre el valle" width="1200" height="800" loading="lazy"></div><figcaption>Foto: Pura Vida Retreat &amp; Spa, <a href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">puravidaspa.com</a></figcaption></figure><figure><div class="r"><img src="../assets/bilder/haeuser/pura-vida-5-1200.webp" alt="Mesa con comida" width="1200" height="800" loading="lazy"></div><figcaption>Foto: Pura Vida Retreat &amp; Spa, <a href="https://puravidaspa.com/" target="_blank" rel="noopener noreferrer">puravidaspa.com</a></figcaption></figure></div></section>
   <section class="frage"><h2>¿Preguntas sobre este lugar?</h2><p>Escríbele a Nils. Te dirá con honestidad lo que sabe y lo que no.</p><a class="knopf" href="https://wa.me/34612252870" target="_blank" rel="noopener noreferrer">WhatsApp</a> <a class="knopf" href="mailto:info@gatherwynd.com">info@gatherwynd.com</a> <a class="knopf rand" href="../#haeuser">Todas las casas</a></section>
 </main>
 <footer><div class="wrap"><p>Una pausa con Gatherwynd no es un tratamiento médico ni psicológico. No sustituye a un médico ni a una terapia.</p><p><a href="https://wa.me/34612252870" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="mailto:info@gatherwynd.com">info@gatherwynd.com</a> · <a href="../impressum.html">Aviso legal</a> · <a href="../datenschutz.html">Privacidad</a></p></div></footer>

@@ -13,7 +13,7 @@ Alle WebP ohne EXIF/GPS/ICC neu gespeichert. Doppel-Check per Datei-Hash und Bil
 ## Vorschaubilder (OG) 15.11.2026 17:50 Berlin
 assets/og/og-es.jpg, og-de.jpg, og-en.jpg (1200x630): Logo R1 (wortbildmarke-hell.svg), Fraunces/Archivo, Foto px-17086149 „hi room“ / Pexels (Pergola, keine Personen). Quelle der Gestaltung: /tmp/og/og-*.html (lokal auch unter kunden/nills/webdesign/live-vorbereitung-2026-11-15/og/).
 
-## Regionenbilder Portal (15.11.2026 18:00 Berlin, Thomas 17:47)
+## Regionenbilder Portal (15.11.2026 17:55 Berlin, Thomas 17:47)
 Pexels License, als „Beispielbild · Pexels“ gekennzeichnet, keine Fotos der Häuser. Datei: assets/bilder/regionen/px-<ID>-1200.webp und -640.webp, ohne Metadaten. Keine erkennbaren Gesichter, keine Kinder, kein Feuer.
 
 | Haus | Pexels-ID | Fotograf (laut Suche) | Seite |
@@ -41,3 +41,5 @@ Pexels License, als „Beispielbild · Pexels“ gekennzeichnet, keine Fotos der
 | Parque de la Papa | 39608872 | siehe Pexels-Seite | https://www.pexels.com/photo/39608872/ |
 | Parque de la Papa | 32407761 | siehe Pexels-Seite | https://www.pexels.com/photo/32407761/ |
 | Parque de la Papa | 31118423 | siehe Pexels-Seite | https://www.pexels.com/photo/31118423/ |
+
+> Hinweis 15.11.2026 18:05: Die Regionenbilder oben werden auf Karten und Detailseiten nicht mehr verwendet (ersetzt durch Originalfotos der Häuser, Quellen in quellen-haeuser.md). Dateien bleiben im Repo.

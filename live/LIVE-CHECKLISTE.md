@@ -1,4 +1,5 @@
 # Gatherwynd live: Checkliste
+Update 15.11.2026 17:45 Berlin (Thomas 17:35/17:38): dreisprachig, ES Standard unter live/, DE unter live/de/, EN unter live/en/, Umschalter ES | DE | EN, hreflang (x-default = ES). Impressum in allen drei Sprachen vorerst ohne Angaben (leerer Abschnitt). EN/ES muttersprachlich prüfen lassen. Bildquellen: quellen.md.
 Update 15.11.2026 ~17:40 Berlin (Thomas 17:11 via Leitung): live/ komplett fertig als GitHub-Pages-Vorschau unter /live/ (noindex). 10 Häuser wieder drin (Quellen: quellen-haeuser.md), Kontakt nur info@gatherwynd.com (WhatsApp/Instagram fehlen bis Freigabe), Impressum/Datenschutz ohne Platzhalter mit belegten Daten (Straße, PLZ, NIF fehlen noch). Für Go-live auf IONOS: noindex entfernen, canonical https://gatherwynd.com/ setzen, Impressum vervollständigen, Hosting-Absatz Datenschutz (IONOS, AVV) ergänzen.
 
 Vorbereitet 15.11.2026 Berlin. Grundlage: version-4, Freigabe Nils 15.11. 14:26, Thomas 15.11. 16:54.

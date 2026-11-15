@@ -9,3 +9,6 @@ Pexels License (https://www.pexels.com/license/), Credit auf der Seite am Bild u
 | nils-gastgeber-2026-11-15-1200/-800.webp | Dein Gastgeber (Porträt) | Quelle: kunden/nils/fotos/nils-portraet-2026-11-15.jpg (von Thomas abgelegt 15.11. 17:30) | – | Nils; Herkunft echt/KI-bearbeitet nicht dokumentiert |
 
 Alle WebP ohne EXIF/GPS/ICC neu gespeichert. Doppel-Check per Datei-Hash und Bild-Hash: kein Motiv doppelt (Ausnahme: Logo in Kopf und Fuß).
+
+## Vorschaubilder (OG) 15.11.2026 17:50 Berlin
+assets/og/og-es.jpg, og-de.jpg, og-en.jpg (1200x630): Logo R1 (wortbildmarke-hell.svg), Fraunces/Archivo, Foto px-17086149 „hi room“ / Pexels (Pergola, keine Personen). Quelle der Gestaltung: /tmp/og/og-*.html (lokal auch unter kunden/nills/webdesign/live-vorbereitung-2026-11-15/og/).

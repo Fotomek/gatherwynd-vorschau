@@ -1,4 +1,6 @@
-# Gatherwynd live: Checkliste (Branch live-vorbereitung-v4, NICHT mergen)
+# Gatherwynd live: Checkliste
+Update 15.11.2026 ~17:40 Berlin (Thomas 17:11 via Leitung): live/ komplett fertig als GitHub-Pages-Vorschau unter /live/ (noindex). 10 Häuser wieder drin (Quellen: quellen-haeuser.md), Kontakt nur info@gatherwynd.com (WhatsApp/Instagram fehlen bis Freigabe), Impressum/Datenschutz ohne Platzhalter mit belegten Daten (Straße, PLZ, NIF fehlen noch). Für Go-live auf IONOS: noindex entfernen, canonical https://gatherwynd.com/ setzen, Impressum vervollständigen, Hosting-Absatz Datenschutz (IONOS, AVV) ergänzen.
+
 Vorbereitet 15.11.2026 Berlin. Grundlage: version-4, Freigabe Nils 15.11. 14:26, Thomas 15.11. 16:54.
 
 ## Geändert gegenüber version-4

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Casas · Gatherwynd · Borrador A</title>
+<meta name="description" content="Casas pequeñas en Costa Rica, Perú, España y Paraguay. Borrador A.">
+<link rel="icon" href="../../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/logo/favicon-32.png" type="image/png" sizes="32x32">
+<style>
+@font-face{font-family:"Archivo LP";src:url(../../assets/fonts/archivo-latin.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Archivo LP";src:url(../../assets/fonts/archivo-latinext.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0100-02FF,U+1E00-1EFF}
+@font-face{font-family:"Fraunces LP";src:url(../../assets/fonts/fraunces-latin.woff2) format("woff2");font-weight:480;font-style:normal;font-display:swap}
+:root{--ink:#141615;--ink-2:#4A4E4B;--ink-3:#6B706C;--flaeche-2:#F7F8F6;--hellgrau:#ECEDEA;--linie:#DDE0DC;--nacht:#111213;--nacht-2:#1A1C1B;--wald:#1D5C3A;--gold:#E2C541;--orange:#D2401A;--orange-hell:#FF6B3D;--weiss:#fff;--kopf:"Fraunces LP",Georgia,serif;--text:"Archivo LP",system-ui,sans-serif}
+*{box-sizing:border-box}html,body{margin:0}body{font:16px/1.5 var(--text);color:var(--ink);background:var(--weiss);-webkit-text-size-adjust:100%}
+a{color:inherit}:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.kopf{background:var(--nacht);color:#fff}.kopf .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px}
+.kopf img{height:46px;width:auto;display:block}.kopf nav{display:flex;gap:8px;align-items:center;font-size:14.5px}
+.kopf nav a{text-decoration:none;padding:9px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.28);min-height:40px;display:inline-flex;align-items:center}
+.entwurf{background:var(--gold);color:var(--ink);font:600 12px/1.3 var(--text);text-align:center;padding:5px 10px}
+h1{font:480 clamp(28px,4vw,46px)/1.08 var(--kopf);letter-spacing:-.01em;margin:0 0 6px}
+.lead{color:var(--ink-2);margin:0;max-width:640px}
+.pill{font:600 10.5px/1 var(--text);letter-spacing:.1em;text-transform:uppercase;padding:5px 7px;border-radius:4px;background:#EDF3EF;color:var(--wald);white-space:nowrap}
+.pill.preis{background:#FBF6DE;color:var(--ink)}
+.platz{position:relative;display:flex;align-items:flex-end;justify-content:space-between;padding:10px 12px;color:#fff;overflow:hidden}
+.platz::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.28),transparent 45%),repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 14px)}
+.platz b{position:relative;z-index:1;font:480 30px/1 var(--kopf);letter-spacing:.02em}.platz span{position:relative;z-index:1;font:600 10.5px/1 var(--text);letter-spacing:.12em;text-transform:uppercase;opacity:.92}
+.knopf{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:4px;font:600 15px/1.2 var(--text);text-decoration:none;background:var(--wald);color:#fff;border:1px solid var(--wald)}
+.knopf.rand{background:transparent;color:var(--wald)}
+.knopf.wa{background:var(--orange);border-color:var(--orange)}
+.offen{border:1px dashed #C9A94A;background:#FFFBEA;border-radius:8px;padding:10px 14px;font-size:13.5px;color:var(--ink-2)}
+.offen strong{color:var(--ink)}.offen .tag{display:inline-block;font:700 10px/1 var(--text);letter-spacing:.1em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:4px 6px;border-radius:3px;margin-right:6px;vertical-align:1px}
+footer{background:var(--nacht);color:#B9BCB8;font-size:13px;padding:22px 0;margin-top:28px}footer a{color:#D5D8D4}footer p{margin:0 0 6px}
+main{padding:18px 0 0}
+.laender{display:flex;gap:8px;margin:16px 0 14px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.laender::-webkit-scrollbar{display:none}
+.laender button{flex:0 0 auto;font:600 15px/1 var(--text);min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #C5C8C4;background:#fff;color:var(--ink);cursor:pointer}
+.laender button small{font-weight:500;color:var(--ink-3);margin-left:4px}
+.laender button[aria-selected="true"]{background:var(--wald);border-color:var(--wald);color:#fff}.laender button[aria-selected="true"] small{color:#D8E6DC}
+.panel{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.karte{border:1px solid var(--linie);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.karte .platz{height:92px}
+.karte .in{padding:12px 14px 14px;display:flex;flex-direction:column;gap:5px;flex:1}
+.karte h3{font:480 21px/1.15 var(--kopf);margin:0}
+.karte .ort{margin:0;color:var(--ink-3);font-size:13.5px}
+.karte .txt{margin:0;color:var(--ink-2);font-size:14.5px}
+.karte .reihe{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:2px}
+.karte .route{font-size:12.5px;color:var(--ink-3);margin:0}
+.karte .preisinfo{font-size:12.5px;color:var(--ink-3);margin:0}
+.karte .aktion{margin-top:auto;padding-top:8px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.karte .knopf{min-height:42px;padding:8px 14px;font-size:14.5px}.mini{font-size:13.5px;color:var(--wald)}
+.hinweis-z{font-size:12.5px;color:var(--ink-3);margin:10px 0 14px}
+.kontakt{margin:22px 0 0;padding:18px;border-radius:10px;background:var(--flaeche-2);display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.kontakt h2{font:480 24px/1.15 var(--kopf);margin:0}.kontakt p{margin:2px 0 0;color:var(--ink-2);font-size:14.5px}.kontakt .k{display:flex;gap:8px;flex-wrap:wrap}
+@media (max-width:820px){
+ .panel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 6px;scrollbar-width:none}.panel::-webkit-scrollbar{display:none}
+ .karte{flex:0 0 82%;scroll-snap-align:start}.karte .platz{height:64px}.karte .platz b{font-size:24px}
+ .wisch{display:block!important}
+}
+.wisch{display:none;font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="entwurf">Borrador A/B · vista previa interna, no indexada</div>
+<header class="kopf"><div class="wrap">
+  <a href="../../" aria-label="Gatherwynd, inicio"><img src="../../assets/logo/wortbildmarke-dunkel.svg" alt="Gatherwynd" width="72" height="46"></a>
+  <nav aria-label="Contacto rápido"><a href="#contacto">Contacto</a><a href="https://wa.me/34612252870" target="_blank" rel="noopener">WhatsApp</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>Casas pequeñas para una pausa</h1>
+  <p class="lead">Diecinueve casas tranquilas en cuatro países. Elige un país.</p>
+  <div class="laender" role="tablist" aria-label="País"><button type="button" role="tab" id="t-cr" aria-controls="p-cr" aria-selected="true">Costa Rica<small>5</small></button><button type="button" role="tab" id="t-pe" aria-controls="p-pe" aria-selected="false" tabindex="-1">Perú<small>5</small></button><button type="button" role="tab" id="t-es" aria-controls="p-es" aria-selected="false" tabindex="-1">España<small>5</small></button><button type="button" role="tab" id="t-py" aria-controls="p-py" aria-selected="false" tabindex="-1">Paraguay<small>4</small></button></div>
+<div class="panel" role="tabpanel" id="p-cr" aria-labelledby="t-cr">
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#1D5C3A,#7FA88A)" role="img" aria-label="Marcador neutro, sin foto"><b>PL</b><span>Costa Rica</span></div>
+  <div class="in">
+    <h3>Pacuare Lodge</h3>
+    <p class="ort">Río Pacuare, provincia de Limón</p>
+    <p class="txt">Lodge pequeño con 20 suites y villas independientes entre el río y el bosque lluvioso, con spa.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Lodge en la naturaleza</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://www.pacuarelodge.com/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#1D5C3A,#7FA88A)" role="img" aria-label="Marcador neutro, sin foto"><b>LR</b><span>Costa Rica</span></div>
+  <div class="in">
+    <h3>Lapa Rios Lodge</h3>
+    <p class="ort">Península de Osa, cerca de Corcovado</p>
+    <p class="txt">Lodge en la selva, con mucha naturaleza y privacidad.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Lodge en la naturaleza</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://www.laparios.com/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#1D5C3A,#7FA88A)" role="img" aria-label="Marcador neutro, sin foto"><b>ES</b><span>Costa Rica</span></div>
+  <div class="in">
+    <h3>El Silencio Lodge &amp; Spa</h3>
+    <p class="ort">Bosque nuboso, a unos 65 km del aeropuerto SJO</p>
+    <p class="txt">Lodge tranquilo en el bosque. Según su web, con yoga diario y desayuno.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Lodge en la naturaleza</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://www.elsilenciolodge.com/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#1D5C3A,#7FA88A)" role="img" aria-label="Marcador neutro, sin foto"><b>FR</b><span>Costa Rica</span></div>
+  <div class="in">
+    <h3>Finca Rosa Blanca Coffee Farm &amp; Inn</h3>
+    <p class="ort">Santa Bárbara de Heredia, cerca de San José</p>
+    <p class="txt">Casa familiar con 14 villas, suites y estudios en una finca de café ecológico.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/cr/finca-rosa-blanca.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://fincarosablanca.com/en/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#1D5C3A,#7FA88A)" role="img" aria-label="Marcador neutro, sin foto"><b>BO</b><span>Costa Rica</span></div>
+  <div class="in">
+    <h3>Blue Osa Yoga Retreat &amp; Spa</h3>
+    <p class="ort">Playa Tamales, Puerto Jiménez, península de Osa</p>
+    <p class="txt">Casa pequeña con 13 habitaciones, yoga, cocina ecológica, playa y bosque. No hace falta practicar yoga.</p>
+    <div class="reihe"><span class="pill preis">Desde 1.440 USD</span><span class="pill">Retiro de yoga</span></div>
+    <p class="preisinfo">paquete de 4 días con alojamiento, comidas y yoga. Según la web oficial, 16.11.2026, sin garantía.</p>
+    <p class="route">Vía de reserva: BookYogaRetreats (Tripaneer)</p>
+    <div class="aktion"><a class="knopf" href="https://www.blueosa.com/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+</div>
+<div class="panel" role="tabpanel" id="p-pe" aria-labelledby="t-pe" data-start-hidden>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#8A5A2B,#E2C541)" role="img" aria-label="Marcador neutro, sin foto"><b>TI</b><span>Perú</span></div>
+  <div class="in">
+    <h3>Titilaka</h3>
+    <p class="ort">Península privada en el lago Titicaca, Puno</p>
+    <p class="txt">Lodge pequeño y tranquilo. Todas las habitaciones miran al lago.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Lodge en la naturaleza</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://andean.travel/titilaka" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#8A5A2B,#E2C541)" role="img" aria-label="Marcador neutro, sin foto"><b>IU</b><span>Perú</span></div>
+  <div class="in">
+    <h3>Inkaterra Hacienda Urubamba</h3>
+    <p class="ort">Huayoccari, Valle Sagrado</p>
+    <p class="txt">Hacienda boutique en el Valle Sagrado, con jardín y paisaje andino.</p>
+    <div class="reihe"><span class="pill preis">Desde 410 USD</span><span class="pill">Hotel boutique</span></div>
+    <p class="preisinfo">por persona y noche en doble, paquete Sacred Valley for Two, hasta el 20.12.2026. Según la web oficial, 16.11.2026, sin garantía.</p>
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/pe/inkaterra-hacienda-urubamba.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.inkaterra.com/promotions/cusco/hacienda-urubamba/" target="_blank" rel="noopener">Oferta oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#8A5A2B,#E2C541)" role="img" aria-label="Marcador neutro, sin foto"><b>IC</b><span>Perú</span></div>
+  <div class="in">
+    <h3>Inkaterra La Casona</h3>
+    <p class="ort">Plaza de las Nazarenas, Cusco</p>
+    <p class="txt">Casa pequeña con suites en un edificio histórico del centro de Cusco.</p>
+    <div class="reihe"><span class="pill preis">Desde 358 USD</span><span class="pill">Hotel boutique</span></div>
+    <p class="preisinfo">por persona y noche en doble, paquete Romantic Cusco Escape de 2 noches, hasta el 20.12.2026. Según la web oficial, 16.11.2026, sin garantía.</p>
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/pe/inkaterra-la-casona.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.inkaterra.com/promotions/cusco/la-casona/" target="_blank" rel="noopener">Oferta oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#8A5A2B,#E2C541)" role="img" aria-label="Marcador neutro, sin foto"><b>IM</b><span>Perú</span></div>
+  <div class="in">
+    <h3>Inkaterra Machu Picchu Pueblo Hotel</h3>
+    <p class="ort">Machu Picchu Pueblo, Urubamba</p>
+    <p class="txt">Conjunto con aire de pueblo, jardines y naturaleza al pie de Machu Picchu.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Lodge en la naturaleza</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/pe/inkaterra-machu-picchu-pueblo.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#8A5A2B,#E2C541)" role="img" aria-label="Marcador neutro, sin foto"><b>NH</b><span>Perú</span></div>
+  <div class="in">
+    <h3>Niños Hotel (Meloc y Fierro)</h3>
+    <p class="ort">Cusco, Calle Meloc 148 y Calle Fierro 476</p>
+    <p class="txt">Dos casas pequeñas e independientes en el centro. Según la casa, la estancia apoya a la fundación Niños Unidos Peruanos.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/pe/ninos-ii.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://ninoshotel.com/en" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+</div>
+<div class="panel" role="tabpanel" id="p-es" aria-labelledby="t-es" data-start-hidden>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#D2401A,#F2B28F)" role="img" aria-label="Marcador neutro, sin foto"><b>MT</b><span>España</span></div>
+  <div class="in">
+    <h3>Mas de Torrent Hotel &amp; Spa</h3>
+    <p class="ort">Torrent, Empordà, Girona</p>
+    <p class="txt">Masía restaurada del siglo XVIII con 39 suites, jardín y spa, entre el campo y el mar.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://www.unicohotels.com/en/hotel-mas-de-torrent/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#D2401A,#F2B28F)" role="img" aria-label="Marcador neutro, sin foto"><b>LB</b><span>España</span></div>
+  <div class="in">
+    <h3>La Bionda Hotel Begur</h3>
+    <p class="ort">Begur, Costa Brava</p>
+    <p class="txt">Solo adultos. 7 habitaciones en una casa del casco antiguo, desayuno incluido. Cierra de mediados de noviembre a mediados de febrero.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://www.labiondabegur.com/" target="_blank" rel="noopener">Web oficial ›</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#D2401A,#F2B28F)" role="img" aria-label="Marcador neutro, sin foto"><b>MB</b><span>España</span></div>
+  <div class="in">
+    <h3>Gran Hotel Mas d&#x27;en Bruno</h3>
+    <p class="ort">Torroja del Priorat, Tarragona</p>
+    <p class="txt">Hotel boutique con 24 suites en una masía entre viñedos.</p>
+    <div class="reihe"><span class="pill preis">Desde 495 €</span><span class="pill">Hotel boutique</span></div>
+    <p class="preisinfo">por noche, Junior Suite, tienda oficial. Según la web oficial, 16.11.2026, sin garantía.</p>
+    <p class="route">Vía de reserva: Mr &amp; Mrs Smith</p>
+    <div class="aktion"><a class="knopf" href="https://shopmasdenbruno.com/en/" target="_blank" rel="noopener">Tienda oficial ›</a> <a class="mini" href="https://www.masdenbruno.com/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#D2401A,#F2B28F)" role="img" aria-label="Marcador neutro, sin foto"><b>HT</b><span>España</span></div>
+  <div class="in">
+    <h3>Hotel del Teatre</h3>
+    <p class="ort">Regencós, Empordà, Girona</p>
+    <p class="txt">Casa pequeña solo para adultos, con jardín y piscina, en un tranquilo pueblo de piedra.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/es/del-teatre.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://hoteldelteatre.com/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#D2401A,#F2B28F)" role="img" aria-label="Marcador neutro, sin foto"><b>MR</b><span>España</span></div>
+  <div class="in">
+    <h3>Hotel Medium Romàntic</h3>
+    <p class="ort">Sitges, Carrer de Sant Isidre 33</p>
+    <p class="txt">Tres villas modernistas en el centro, con jardín, a unos 400 metros de la playa.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/es/medium-romantic.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.mediumhoteles.com/en/hotel-medium-romantic/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+</div>
+<div class="panel" role="tabpanel" id="p-py" aria-labelledby="t-py" data-start-hidden>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#2E4F6E,#9DB8C9)" role="img" aria-label="Marcador neutro, sin foto"><b>NB</b><span>Paraguay</span></div>
+  <div class="in">
+    <h3>Nino Hotel Boutique</h3>
+    <p class="ort">Villa Morra, Asunción</p>
+    <p class="txt">11 suites en una antigua hilandería restaurada, con arte, jardín y piscina.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/py/nino-boutique.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.ninohotelboutique.com/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#2E4F6E,#9DB8C9)" role="img" aria-label="Marcador neutro, sin foto"><b>LM</b><span>Paraguay</span></div>
+  <div class="in">
+    <h3>La Misión Hotel Boutique</h3>
+    <p class="ort">Asunción</p>
+    <p class="txt">Hotel pequeño con un paquete romántico propio.</p>
+    <div class="reihe"><span class="pill preis">Desde 274 USD + IVA</span><span class="pill">Hotel boutique</span></div>
+    <p class="preisinfo">paquete romántico, habitación Executive. Según la web oficial, 16.11.2026, sin garantía.</p>
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/py/la-mision-boutique.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.lamision.com.py/hotel-room/experiencia-romantica/" target="_blank" rel="noopener">Oferta oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#2E4F6E,#9DB8C9)" role="img" aria-label="Marcador neutro, sin foto"><b>GP</b><span>Paraguay</span></div>
+  <div class="in">
+    <h3>Gran Hotel del Paraguay</h3>
+    <p class="ort">Asunción, desde 1921</p>
+    <p class="txt">Hotel histórico con jardín y piscina, más clásico y verde.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/py/granhotelpy.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://granhoteldelparaguay.com.py/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+<article class="karte">
+  <div class="platz" style="background:linear-gradient(135deg,#2E4F6E,#9DB8C9)" role="img" aria-label="Marcador neutro, sin foto"><b>OD</b><span>Paraguay</span></div>
+  <div class="in">
+    <h3>Oasis Dream Hotel</h3>
+    <p class="ort">San Bernardino, lago Ypacaraí</p>
+    <p class="txt">Hotel pequeño con spa, piscina y jardín, más tranquilo que la ciudad.</p>
+    <div class="reihe"><span class="pill preis">Precio en la casa</span><span class="pill">Hotel boutique</span></div>
+    
+    <p class="route">Vía de reserva: Booking.com</p>
+    <div class="aktion"><a class="knopf" href="https://www.booking.com/hotel/py/oasis-dream-holidays.html" target="_blank" rel="noopener">Ver en Booking.com ›</a> <a class="mini" href="https://www.oasis-dream.com/en/" target="_blank" rel="noopener">Web oficial</a></div>
+  </div>
+</article>
+</div>
+  <p class="wisch">Desliza para ver más casas ›</p>
+  <p class="hinweis-z">Selección independiente, no una colaboración. Enlaces directos a la web oficial o a Booking.com.</p>
+  <aside class="offen" aria-label="Publicidad / enlaces de afiliado"><span class="tag">Borrador</span><strong>Publicidad / enlaces de afiliado:</strong> Algunos enlaces de esta página podrían convertirse en enlaces de afiliado. Si reservas a través de ellos, Gatherwynd podría recibir una comisión, sin coste adicional para ti. Ahora los enlaces son directos y no llevan códigos de afiliado. <em>Texto provisional, pendiente de revisión legal.</em></aside>
+  <section class="kontakt" id="contacto"><div><h2>¿Hablamos?</h2><p>Escribe a Nils. Te dirá con honestidad lo que sabe y lo que no.</p></div><div class="k"><a class="knopf wa" href="https://wa.me/34612252870" target="_blank" rel="noopener">WhatsApp</a><a class="knopf rand" href="mailto:info@gatherwynd.com">info@gatherwynd.com</a></div></section>
+</main>
+<footer><div class="wrap">
+<p>Una selección independiente. Las casas no son socias de Gatherwynd y aquí no se puede reservar. Datos y precios según las webs oficiales (16.11.2026), sin garantía. Las imágenes son marcadores neutros, no fotos de las casas.</p>
+<p>Una estancia con Gatherwynd no es un tratamiento médico ni psicológico.</p>
+<p><a href="https://wa.me/34612252870" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:info@gatherwynd.com">info@gatherwynd.com</a> · <a href="../../impressum.html">Aviso legal</a> · <a href="../../datenschutz.html">Política de privacidad</a></p>
+</div></footer>
+<script>
+(function(){var t=[].slice.call(document.querySelectorAll('.laender [role=tab]')),p=[].slice.call(document.querySelectorAll('[role=tabpanel]'));
+p.forEach(function(x){if(x.hasAttribute('data-start-hidden'))x.hidden=true});
+function zeig(b,f){t.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1});p.forEach(function(x){x.hidden=x.id!==b.getAttribute('aria-controls')});if(f)b.focus();history.replaceState(null,'','#'+b.id.slice(2))}
+t.forEach(function(b,i){b.addEventListener('click',function(){zeig(b)});b.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(k){e.preventDefault();zeig(t[(i+k+t.length)%t.length],true)}})});
+var h=location.hash.slice(1);t.forEach(function(b){if(b.id==='t-'+h)zeig(b)})})();
+</script>
+</body>
+</html>

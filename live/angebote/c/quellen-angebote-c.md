@@ -4,11 +4,13 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 
 **Bildrechte NICHT eingeholt** (siehe LIVE-CHECKLISTE). Vor Veröffentlichung Freigabe der Häuser bzw. Partner einholen. Offenlegungstext ist Entwurf, Prüfung durch Recht offen. Alle Links direkt, ohne Affiliate-Codes.
 
+**17.11.2026:** Gatherwynd ist selbst der Partner. Buchungs- und Anfragelinks zeigen nur noch auf die offiziellen Seiten der Häuser; Filter und Angaben zum Partnerweg entfernt. Die Partnerweg-Vermerke unten sind nur historische Recherche-Notizen (ohne Links).
+
 ## Pacuare Lodge
 
 - Offizielle Seite: https://www.pacuarelodge.com/
-- Hauptlink: https://www.pacuarelodge.com/ (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://reservations.pacuarelodge.com/book/dates-of-stay (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Hinweis: Bild 1 der Startseite übersprungen (Feuer).
@@ -22,8 +24,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Lapa Rios Lodge
 
 - Offizielle Seite: https://www.laparios.com/
-- Hauptlink: https://www.laparios.com/ (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://reservations.laparios.com/book/dates-of-stay (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):
@@ -36,8 +38,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## El Silencio Lodge & Spa
 
 - Offizielle Seite: https://www.elsilenciolodge.com/
-- Hauptlink: https://www.elsilenciolodge.com/ (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.elsilenciolodge.com/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Hinweis: Ein Bild übersprungen (Feuer/Kerzen).
@@ -51,8 +53,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Finca Rosa Blanca Coffee Farm & Inn
 
 - Offizielle Seite: https://fincarosablanca.com/en/
-- Hauptlink: https://www.booking.com/hotel/cr/finca-rosa-blanca.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://fincarosablanca.com/en/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):
@@ -65,8 +67,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Blue Osa Yoga Retreat & Spa
 
 - Offizielle Seite: https://www.blueosa.com/
-- Hauptlink: https://www.blueosa.com/ (Web oficial)
-- Vía de socio: BookYogaRetreats (Tripaneer)
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.blueosa.com/book-now/vacation-wellness-packages-costa-rica/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): BookYogaRetreats (Tripaneer)
 - Preis: „Paquetes desde 1.440 USD (4 días) hasta 2.300 USD (una semana)“ · Quelle: https://www.blueosa.com/ · abgerufen 16.11.2026
 - Solo adultos: no indicado
 - Bilder (5):
@@ -79,8 +81,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Titilaka
 
 - Offizielle Seite: https://andean.travel/titilaka
-- Hauptlink: https://andean.travel/titilaka (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://andean.travel/titilaka (Consultar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Hinweis: Bilder mit Feuer und mit Tänzern übersprungen.
@@ -94,8 +96,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Inkaterra Hacienda Urubamba
 
 - Offizielle Seite: https://www.inkaterra.com/promotions/cusco/hacienda-urubamba/
-- Hauptlink: https://www.booking.com/hotel/pe/inkaterra-hacienda-urubamba.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://reservations.inkaterra.com/ithu (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: „desde 410 USD por persona y noche en habitación doble (paquete Sacred Valley for Two, 3 días y 2 noches)“ · Quelle: https://www.inkaterra.com/promotions/cusco/hacienda-urubamba/ · abgerufen 16.11.2026
 - Solo adultos: no indicado
 - Hinweis: Ein Bild übersprungen (Feuer). Promo-Bilder nur 620 px, daher Bilder der Hotelseite (EXP_*_big).
@@ -109,8 +111,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Inkaterra La Casona
 
 - Offizielle Seite: https://www.inkaterra.com/promotions/cusco/la-casona/
-- Hauptlink: https://www.booking.com/hotel/pe/inkaterra-la-casona.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://reservations.inkaterra.com/itlc (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: „desde 358 USD por persona y noche en habitación doble (paquete Romantic Cusco Escape, 3 días y 2 noches)“ · Quelle: https://www.inkaterra.com/promotions/cusco/la-casona/ · abgerufen 16.11.2026
 - Solo adultos: no indicado
 - Hinweis: Nur 3 Bilder: Hot-Stone-Massage und Personenbilder übersprungen.
@@ -122,8 +124,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Inkaterra Machu Picchu Pueblo Hotel
 
 - Offizielle Seite: https://www.inkaterra.com/inkaterra/inkaterra-machu-picchu-pueblo-hotel/
-- Hauptlink: https://www.booking.com/hotel/pe/inkaterra-machu-picchu-pueblo.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://reservations.inkaterra.com/itmp (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Hinweis: Nur 2 Bilder: übrige zeigen Kamin oder sind Logo-Banner.
@@ -134,8 +136,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Niños Hotel (Meloc y Fierro)
 
 - Offizielle Seite: https://ninoshotel.com/en
-- Hauptlink: https://www.booking.com/hotel/pe/ninos-ii.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://ninoshotel.com/en-book-now-p (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: „desde 40 USD por noche (individual con baño compartido); doble con baño privado 70 USD“ · Quelle: https://ninoshotel.com/en-fierro-hotel-p · abgerufen 16.11.2026
 - Solo adultos: no indicado
 - Hinweis: Nur 3 Bilder aus /ban/ und /fot/; übrige mit Personen oder zu klein.
@@ -147,8 +149,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Mas de Torrent Hotel & Spa
 
 - Offizielle Seite: https://www.unicohotels.com/en/hotel-mas-de-torrent/
-- Hauptlink: https://www.unicohotels.com/en/hotel-mas-de-torrent/ (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.unicohotels.com/en/hotel-mas-de-torrent/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Hinweis: Für curl Cloudflare-Challenge (nicht umgangen); Seite im normalen Chrome geladen. Zwei Bilder übersprungen (Kamin/Feuer).
@@ -162,8 +164,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Hotel La Bionda
 
 - Offizielle Seite: https://www.labiondabegur.com/
-- Hauptlink: https://www.labiondabegur.com/ (Web oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.labiondabegur.com/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: sí (laut Website)
 - Hinweis: Startseite zeigt nur eine Grafik; Bilder von den Unterseiten the-house/rooms. Solo adultos laut FAQ.
@@ -177,11 +179,11 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Gran Hotel Mas d'en Bruno
 
 - Offizielle Seite: https://www.masdenbruno.com/
-- Hauptlink: https://shopmasdenbruno.com/en/ (Tienda oficial)
-- Vía de socio: Mr & Mrs Smith
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.masdenbruno.com/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Mr & Mrs Smith
 - Preis: „bono 1 noche Junior Suite 495 €, Garden Suite 595 €“ · Quelle: https://shopmasdenbruno.com/en/ · abgerufen 16.11.2026
 - Solo adultos: no indicado
-- Hinweis: masdenbruno.com verweigert die Verbindung (ERR_CONNECTION_CLOSED); Bilder und Preise aus dem offiziellen Shop. Ein Bild übersprungen (Feuerstelle).
+- Hinweis: masdenbruno.com verweigert die Verbindung (ERR_CONNECTION_CLOSED); Bilder und Preise aus dem offiziellen Shop. Am 17.11.2026 wieder erreichbar, Buchungslink zeigt auf masdenbruno.com. Ein Bild übersprungen (Feuerstelle).
 - Bilder (3):
   1. `bilder/mas-den-bruno-1-1200.webp` ← https://shopmasdenbruno.com//backoffice/images/12-mvc240580109-gran-hotel-mas-den-bruno-suite-49-web.jpg (Seite: https://shopmasdenbruno.com/en/, Original 1920×1277)
   2. `bilder/mas-den-bruno-2-1200.webp` ← https://shopmasdenbruno.com//backoffice/images/15-mvc240662608-gran-hotel-mas-den-bruno-spa-pool-web.jpg (Seite: https://shopmasdenbruno.com/en/, Original 1920×1265)
@@ -190,8 +192,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Hotel del Teatre
 
 - Offizielle Seite: https://hoteldelteatre.com/
-- Hauptlink: https://www.booking.com/hotel/es/del-teatre.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://hoteldelteatre.com/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: sí (laut Website)
 - Hinweis: Nur 2 Bilder: übrige nicht ladbar oder unscharfe Collagen. Solo adultos laut hoteldelteatre.com/es/hotel.
@@ -202,8 +204,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Hotel Medium Romàntic
 
 - Offizielle Seite: https://www.mediumhoteles.com/en/hotel-medium-romantic/
-- Hauptlink: https://www.booking.com/hotel/es/medium-romantic.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.mediumhoteles.com/en/hotel-medium-romantic/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):
@@ -216,8 +218,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Nino Hotel Boutique
 
 - Offizielle Seite: https://www.ninohotelboutique.com/
-- Hauptlink: https://www.booking.com/hotel/py/nino-boutique.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.ninohotelboutique.com/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):
@@ -230,8 +232,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## La Misión Hotel Boutique
 
 - Offizielle Seite: https://www.lamision.com.py/hotel-room/experiencia-romantica/
-- Hauptlink: https://www.booking.com/hotel/py/la-mision-boutique.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.lamision.com.py/hotel-room/experiencia-romantica/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: „Experiencia romántica desde 274 USD + IVA (habitación Executive)“ · Quelle: https://www.lamision.com.py/hotel-room/experiencia-romantica/ · abgerufen 16.11.2026
 - Solo adultos: no indicado
 - Bilder (5):
@@ -244,8 +246,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Gran Hotel del Paraguay
 
 - Offizielle Seite: https://granhoteldelparaguay.com.py/
-- Hauptlink: https://www.booking.com/hotel/py/granhotelpy.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://granhoteldelparaguay.com.py/contacto/ (Consultar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):
@@ -258,8 +260,8 @@ Abgerufen am 16.11.2026. Bilder lokal als WebP (1200/640 px, Qualität 78, ohne 
 ## Oasis Dream Hotel
 
 - Offizielle Seite: https://www.oasis-dream.com/en/
-- Hauptlink: https://www.booking.com/hotel/py/oasis-dream-holidays.html (Ver en Booking.com)
-- Vía de socio: Booking.com
+- Buchungs-/Anfragelink (offiziell, ab 17.11.2026): https://www.oasis-dream.com/en/booking/ (Reservar en la web oficial)
+- Historischer Recherche-Vermerk Partnerweg (16.11., entfernt 17.11.): Booking.com
 - Preis: keiner veröffentlicht → „Precio en la casa“
 - Solo adultos: no indicado
 - Bilder (5):

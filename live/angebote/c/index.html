@@ -347,7 +347,6 @@ a{color:inherit}
 .filterleiste{flex-wrap:nowrap}
 .filterleiste select{max-width:210px}
 .angebot .preiszeile{margin:2px 0 0;font:600 14px/1.35 var(--text);color:var(--ink)}.angebot .preiszeile small{font-weight:400;color:var(--ink-3)}
-.angebot .via{margin:0;font-size:13px;color:var(--ink-3)}
 .angebot .text{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .tag.adultos{background:#F3E8F0;color:#6B2E5A}
 @media (max-width:1100px){.filterleiste{overflow-x:auto}}
@@ -355,7 +354,7 @@ a{color:inherit}
  .portal{padding:24px 0 40px}
  .filterleiste{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;border-radius:14px;overflow:visible}
  .filterleiste label{min-width:0}
- .filterleiste .anzahl{grid-column:3;grid-row:2;align-self:center;justify-self:start;padding-left:12px}
+ .filterleiste .anzahl{grid-column:2;grid-row:2;align-self:center;justify-self:start;padding-left:12px}
  .filterleiste .reset{grid-column:3;grid-row:2;align-self:center;justify-self:end;margin-right:6px}
  .portal-raster{gap:10px}
  .angebot{flex-direction:row}
@@ -364,7 +363,7 @@ a{color:inherit}
  .angebot figcaption{padding:4px 6px 6px;font-size:10px}
  .angebot .inhalt{padding:10px 12px 12px;gap:3px;min-width:0}
  .angebot h3{font-size:19px;margin:2px 0 0}
- .angebot .text,.angebot .via{display:none}
+ .angebot .text{display:none}
  .angebot .ort{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
  .angebot .tags{flex-wrap:nowrap;overflow:hidden}
  .angebot .tag{white-space:nowrap}
@@ -389,105 +388,105 @@ a{color:inherit}
     <p class="lead">Lodges, fincas y casas con encanto en Costa Rica, Perú, España y Paraguay. Filtra y abre cada casa para ver fotos, precios y enlaces.</p>
     <aside class="offenlegung" aria-label="Publicidad / enlaces de afiliado"><span class="entwurf">Borrador</span><strong>Publicidad / enlaces de afiliado:</strong> En el futuro, algunos enlaces de esta página podrían ser enlaces de afiliado. Si reservas a través de ellos, Gatherwynd podría recibir una comisión, sin coste adicional para ti. Ahora todos los enlaces son directos y no llevan códigos de afiliado. <em>Texto provisional, pendiente de revisión legal.</em></aside>
     <div class="filterleiste" role="group" aria-label="Filtrar casas" hidden>
-      <label><span class="vh">País</span><select data-gruppe="land" aria-label="País"><option value="alle">País</option><option value="cr">Costa Rica</option><option value="pe">Perú</option><option value="es">España</option><option value="py">Paraguay</option></select></label><label><span class="vh">Tipo</span><select data-gruppe="tipo" aria-label="Tipo"><option value="alle">Tipo</option><option value="lodge">Lodge en la naturaleza</option><option value="retiro">Retiro de yoga</option><option value="finca">Finca, hacienda o masía</option><option value="urbana">Casa urbana</option><option value="rural">Hotel rural</option></select></label><label><span class="vh">Solo adultos</span><select data-gruppe="adultos" aria-label="Solo adultos"><option value="alle">Adultos</option><option value="si">Adultos: sí</option><option value="no">Adultos: no indicado</option></select></label><label><span class="vh">Precio desde</span><select data-gruppe="preis" aria-label="Precio desde"><option value="alle">Precio</option><option value="p100">Hasta 100 USD/noche</option><option value="p100b">100 a 300 USD</option><option value="p300">300 a 500 (USD/€)</option><option value="paket">Paquetes desde 1.000 USD</option><option value="keine">Sin precio publicado</option></select></label><label><span class="vh">Vía de socio</span><select data-gruppe="via" aria-label="Vía de socio"><option value="alle">Socio</option><option value="bookyogaretreats-tripaneer">BookYogaRetreats (Tripaneer)</option><option value="booking-com">Booking.com</option><option value="mr-mrs-smith">Mr &amp; Mrs Smith</option></select></label>
+      <label><span class="vh">País</span><select data-gruppe="land" aria-label="País"><option value="alle">País</option><option value="cr">Costa Rica</option><option value="pe">Perú</option><option value="es">España</option><option value="py">Paraguay</option></select></label><label><span class="vh">Tipo</span><select data-gruppe="tipo" aria-label="Tipo"><option value="alle">Tipo</option><option value="lodge">Lodge en la naturaleza</option><option value="retiro">Retiro de yoga</option><option value="finca">Finca, hacienda o masía</option><option value="urbana">Casa urbana</option><option value="rural">Hotel rural</option></select></label><label><span class="vh">Solo adultos</span><select data-gruppe="adultos" aria-label="Solo adultos"><option value="alle">Adultos</option><option value="si">Adultos: sí</option><option value="no">Adultos: no indicado</option></select></label><label><span class="vh">Precio desde</span><select data-gruppe="preis" aria-label="Precio desde"><option value="alle">Precio</option><option value="p100">Hasta 100 USD/noche</option><option value="p100b">100 a 300 USD</option><option value="p300">300 a 500 (USD/€)</option><option value="paket">Paquetes desde 1.000 USD</option><option value="keine">Sin precio publicado</option></select></label>
       <span class="anzahl" aria-live="polite" data-tpl="{n}/19">19/19</span>
       <button type="button" class="reset" hidden aria-label="Restablecer"><span aria-hidden="true">×</span> <span class="rtext">Restablecer</span></button>
     </div>
     <div class="portal-raster">
-      <a class="angebot" href="haus/pacuare.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/pacuare.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/pacuare-1-640.webp" alt="Pacuare Lodge, foto de su web oficial" width="640" height="307" loading="lazy"></div><figcaption>Foto: Pacuare Lodge, pacuarelodge.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Lodge en la naturaleza</span></div>
-          <h3>Pacuare Lodge</h3><p class="ort">Río Pacuare, provincia de Limón, Costa Rica</p><p class="text">Lodge escondido en la selva junto al río Pacuare, con suites de madera abiertas al bosque.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Pacuare Lodge</h3><p class="ort">Río Pacuare, provincia de Limón, Costa Rica</p><p class="text">Lodge escondido en la selva junto al río Pacuare, con suites de madera abiertas al bosque.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/lapa-rios.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/lapa-rios.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/lapa-rios-1-640.webp" alt="Lapa Rios Lodge, foto de su web oficial" width="640" height="307" loading="lazy"></div><figcaption>Foto: Lapa Rios Lodge, laparios.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Lodge en la naturaleza</span></div>
-          <h3>Lapa Rios Lodge</h3><p class="ort">Península de Osa, cerca de Corcovado, Costa Rica</p><p class="text">Lodge en una reserva privada de selva tropical sobre el Pacífico, con bungalows y villas.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Lapa Rios Lodge</h3><p class="ort">Península de Osa, cerca de Corcovado, Costa Rica</p><p class="text">Lodge en una reserva privada de selva tropical sobre el Pacífico, con bungalows y villas.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/el-silencio.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/el-silencio.html" data-land="cr" data-tipo="lodge" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/el-silencio-1-640.webp" alt="El Silencio Lodge &amp; Spa, foto de su web oficial" width="640" height="427" loading="lazy"></div><figcaption>Foto: El Silencio Lodge &amp; Spa, elsilenciolodge.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Lodge en la naturaleza</span></div>
-          <h3>El Silencio Lodge &amp; Spa</h3><p class="ort">Bosque nuboso, a unos 90 minutos del aeropuerto SJO, Costa Rica</p><p class="text">Lodge en el bosque nuboso dentro de una reserva natural, con spa y cocina de su propia huerta.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>El Silencio Lodge &amp; Spa</h3><p class="ort">Bosque nuboso, a unos 90 minutos del aeropuerto SJO, Costa Rica</p><p class="text">Lodge en el bosque nuboso dentro de una reserva natural, con spa y cocina de su propia huerta.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/finca-rosa-blanca.html" data-land="cr" data-tipo="finca" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/finca-rosa-blanca.html" data-land="cr" data-tipo="finca" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/finca-rosa-blanca-1-640.webp" alt="Finca Rosa Blanca Coffee Farm &amp; Inn, foto de su web oficial" width="640" height="336" loading="lazy"></div><figcaption>Foto: Finca Rosa Blanca Coffee Farm &amp; Inn, fincarosablanca.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Finca, hacienda o masía</span></div>
-          <h3>Finca Rosa Blanca Coffee Farm &amp; Inn</h3><p class="ort">Santa Bárbara de Heredia, cerca de San José, Costa Rica</p><p class="text">Casa familiar en una finca de café ecológico en el valle central, pequeña y tranquila.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Finca Rosa Blanca Coffee Farm &amp; Inn</h3><p class="ort">Santa Bárbara de Heredia, cerca de San José, Costa Rica</p><p class="text">Casa familiar en una finca de café ecológico en el valle central, pequeña y tranquila.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/blue-osa.html" data-land="cr" data-tipo="retiro" data-adultos="no" data-preis="paket" data-via="bookyogaretreats-tripaneer">
+      <a class="angebot" href="haus/blue-osa.html" data-land="cr" data-tipo="retiro" data-adultos="no" data-preis="paket">
         <figure><div class="kbild"><img src="bilder/blue-osa-1-640.webp" alt="Blue Osa Yoga Retreat &amp; Spa, foto de su web oficial" width="640" height="359" loading="lazy"></div><figcaption>Foto: Blue Osa Yoga Retreat &amp; Spa, blueosa.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Costa Rica</span><span class="tag">Retiro de yoga</span></div>
-          <h3>Blue Osa Yoga Retreat &amp; Spa</h3><p class="ort">Playa Tamales, Puerto Jiménez, península de Osa, Costa Rica</p><p class="text">Retiro pequeño frente a la playa, con yoga, cocina ecológica y selva alrededor.</p><p class="preiszeile">Paquetes desde 1.440 USD <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: BookYogaRetreats (Tripaneer)</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Blue Osa Yoga Retreat &amp; Spa</h3><p class="ort">Playa Tamales, Puerto Jiménez, península de Osa, Costa Rica</p><p class="text">Retiro pequeño frente a la playa, con yoga, cocina ecológica y selva alrededor.</p><p class="preiszeile">Paquetes desde 1.440 USD <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/titilaka.html" data-land="pe" data-tipo="lodge" data-adultos="no" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/titilaka.html" data-land="pe" data-tipo="lodge" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/titilaka-1-640.webp" alt="Titilaka, foto de su web oficial" width="640" height="480" loading="lazy"></div><figcaption>Foto: Titilaka, andean.travel</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Lodge en la naturaleza</span></div>
-          <h3>Titilaka</h3><p class="ort">Península privada en el lago Titicaca, Puno, Perú</p><p class="text">Lodge tranquilo a 3.810 metros, sobre una península privada; todas las habitaciones miran al lago.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Titilaka</h3><p class="ort">Península privada en el lago Titicaca, Puno, Perú</p><p class="text">Lodge tranquilo a 3.810 metros, sobre una península privada; todas las habitaciones miran al lago.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/hacienda-urubamba.html" data-land="pe" data-tipo="finca" data-adultos="no" data-preis="p300" data-via="booking-com">
+      <a class="angebot" href="haus/hacienda-urubamba.html" data-land="pe" data-tipo="finca" data-adultos="no" data-preis="p300">
         <figure><div class="kbild"><img src="bilder/hacienda-urubamba-1-640.webp" alt="Inkaterra Hacienda Urubamba, foto de su web oficial" width="640" height="386" loading="lazy"></div><figcaption>Foto: Inkaterra Hacienda Urubamba, inkaterra.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Finca, hacienda o masía</span></div>
-          <h3>Inkaterra Hacienda Urubamba</h3><p class="ort">Huayoccari, Valle Sagrado, Perú</p><p class="text">Hacienda boutique en el Valle Sagrado, con casitas entre jardines y montañas.</p><p class="preiszeile">Desde 410 USD p. p./noche <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Inkaterra Hacienda Urubamba</h3><p class="ort">Huayoccari, Valle Sagrado, Perú</p><p class="text">Hacienda boutique en el Valle Sagrado, con casitas entre jardines y montañas.</p><p class="preiszeile">Desde 410 USD p. p./noche <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/la-casona.html" data-land="pe" data-tipo="urbana" data-adultos="no" data-preis="p300" data-via="booking-com">
+      <a class="angebot" href="haus/la-casona.html" data-land="pe" data-tipo="urbana" data-adultos="no" data-preis="p300">
         <figure><div class="kbild"><img src="bilder/la-casona-1-640.webp" alt="Inkaterra La Casona, foto de su web oficial" width="640" height="427" loading="lazy"></div><figcaption>Foto: Inkaterra La Casona, inkaterra.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Casa urbana</span></div>
-          <h3>Inkaterra La Casona</h3><p class="ort">Plaza de las Nazarenas, Cusco, Perú</p><p class="text">Casona colonial en el centro histórico de Cusco, con pocas suites alrededor de un patio.</p><p class="preiszeile">Desde 358 USD p. p./noche <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Inkaterra La Casona</h3><p class="ort">Plaza de las Nazarenas, Cusco, Perú</p><p class="text">Casona colonial en el centro histórico de Cusco, con pocas suites alrededor de un patio.</p><p class="preiszeile">Desde 358 USD p. p./noche <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/machu-picchu-pueblo.html" data-land="pe" data-tipo="lodge" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/machu-picchu-pueblo.html" data-land="pe" data-tipo="lodge" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/machu-picchu-pueblo-1-640.webp" alt="Inkaterra Machu Picchu Pueblo Hotel, foto de su web oficial" width="640" height="427" loading="lazy"></div><figcaption>Foto: Inkaterra Machu Picchu Pueblo Hotel, inkaterra.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Lodge en la naturaleza</span></div>
-          <h3>Inkaterra Machu Picchu Pueblo Hotel</h3><p class="ort">Machu Picchu Pueblo, Urubamba, Perú</p><p class="text">Pequeño pueblo andino de casitas de adobe en el bosque nuboso, al pie de Machu Picchu.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Inkaterra Machu Picchu Pueblo Hotel</h3><p class="ort">Machu Picchu Pueblo, Urubamba, Perú</p><p class="text">Pequeño pueblo andino de casitas de adobe en el bosque nuboso, al pie de Machu Picchu.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/ninos-hotel.html" data-land="pe" data-tipo="urbana" data-adultos="no" data-preis="p100" data-via="booking-com">
+      <a class="angebot" href="haus/ninos-hotel.html" data-land="pe" data-tipo="urbana" data-adultos="no" data-preis="p100">
         <figure><div class="kbild"><img src="bilder/ninos-hotel-1-640.webp" alt="Niños Hotel (Meloc y Fierro), foto de su web oficial" width="640" height="360" loading="lazy"></div><figcaption>Foto: Niños Hotel (Meloc y Fierro), ninoshotel.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Perú</span><span class="tag">Casa urbana</span></div>
-          <h3>Niños Hotel (Meloc y Fierro)</h3><p class="ort">Cusco, Calle Meloc y Calle Fierro, Perú</p><p class="text">Dos casas sencillas con patio en el centro de Cusco; la estancia apoya a una fundación local.</p><p class="preiszeile">Desde 40 USD/noche <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Niños Hotel (Meloc y Fierro)</h3><p class="ort">Cusco, Calle Meloc y Calle Fierro, Perú</p><p class="text">Dos casas sencillas con patio en el centro de Cusco; la estancia apoya a una fundación local.</p><p class="preiszeile">Desde 40 USD/noche <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/mas-de-torrent.html" data-land="es" data-tipo="finca" data-adultos="no" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/mas-de-torrent.html" data-land="es" data-tipo="finca" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/mas-de-torrent-1-640.webp" alt="Mas de Torrent Hotel &amp; Spa, foto de su web oficial" width="640" height="427" loading="lazy"></div><figcaption>Foto: Mas de Torrent Hotel &amp; Spa, unicohotels.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">España</span><span class="tag">Finca, hacienda o masía</span></div>
-          <h3>Mas de Torrent Hotel &amp; Spa</h3><p class="ort">Torrent, Empordà, Girona, España</p><p class="text">Masía del siglo XVIII restaurada en el Empordà, entre campos y la Costa Brava, con jardín y spa.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Mas de Torrent Hotel &amp; Spa</h3><p class="ort">Torrent, Empordà, Girona, España</p><p class="text">Masía del siglo XVIII restaurada en el Empordà, entre campos y la Costa Brava, con jardín y spa.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/la-bionda.html" data-land="es" data-tipo="urbana" data-adultos="si" data-preis="keine" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/la-bionda.html" data-land="es" data-tipo="urbana" data-adultos="si" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/la-bionda-1-640.webp" alt="Hotel La Bionda, foto de su web oficial" width="640" height="861" loading="lazy"></div><figcaption>Foto: Hotel La Bionda, labiondabegur.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">España</span><span class="tag">Casa urbana</span><span class="tag adultos">Solo adultos</span></div>
-          <h3>Hotel La Bionda</h3><p class="ort">Begur, Costa Brava, Girona, España</p><p class="text">Casa con carácter en el casco antiguo de Begur, solo para adultos y con siete habitaciones.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Hotel La Bionda</h3><p class="ort">Begur, Costa Brava, Girona, España</p><p class="text">Casa con carácter en el casco antiguo de Begur, solo para adultos y con siete habitaciones.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/mas-den-bruno.html" data-land="es" data-tipo="finca" data-adultos="no" data-preis="p300" data-via="mr-mrs-smith">
+      <a class="angebot" href="haus/mas-den-bruno.html" data-land="es" data-tipo="finca" data-adultos="no" data-preis="p300">
         <figure><div class="kbild"><img src="bilder/mas-den-bruno-1-640.webp" alt="Gran Hotel Mas d&#x27;en Bruno, foto de su web oficial" width="640" height="426" loading="lazy"></div><figcaption>Foto: Gran Hotel Mas d&#x27;en Bruno, shopmasdenbruno.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">España</span><span class="tag">Finca, hacienda o masía</span></div>
-          <h3>Gran Hotel Mas d&#x27;en Bruno</h3><p class="ort">Torroja del Priorat, Tarragona, España</p><p class="text">Masía entre viñedos del Priorat convertida en hotel boutique, con spa y restaurante.</p><p class="preiszeile">Desde 495 €/noche <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: Mr &amp; Mrs Smith</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Gran Hotel Mas d&#x27;en Bruno</h3><p class="ort">Torroja del Priorat, Tarragona, España</p><p class="text">Masía entre viñedos del Priorat convertida en hotel boutique, con spa y restaurante.</p><p class="preiszeile">Desde 495 €/noche <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/hotel-del-teatre.html" data-land="es" data-tipo="rural" data-adultos="si" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/hotel-del-teatre.html" data-land="es" data-tipo="rural" data-adultos="si" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/hotel-del-teatre-1-640.webp" alt="Hotel del Teatre, foto de su web oficial" width="640" height="426" loading="lazy"></div><figcaption>Foto: Hotel del Teatre, hoteldelteatre.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">España</span><span class="tag">Hotel rural</span><span class="tag adultos">Solo adultos</span></div>
-          <h3>Hotel del Teatre</h3><p class="ort">Regencós, Empordà, Girona, España</p><p class="text">Hotel rural solo para adultos en un pueblo de piedra del Empordà, con jardín, piscina y restaurante.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Hotel del Teatre</h3><p class="ort">Regencós, Empordà, Girona, España</p><p class="text">Hotel rural solo para adultos en un pueblo de piedra del Empordà, con jardín, piscina y restaurante.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/medium-romantic.html" data-land="es" data-tipo="urbana" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/medium-romantic.html" data-land="es" data-tipo="urbana" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/medium-romantic-1-640.webp" alt="Hotel Medium Romàntic, foto de su web oficial" width="640" height="853" loading="lazy"></div><figcaption>Foto: Hotel Medium Romàntic, mediumhoteles.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">España</span><span class="tag">Casa urbana</span></div>
-          <h3>Hotel Medium Romàntic</h3><p class="ort">Sitges, Carrer de Sant Isidre 33, España</p><p class="text">Tres villas modernistas en el centro de Sitges, con jardín centenario y habitaciones con arte.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Hotel Medium Romàntic</h3><p class="ort">Sitges, Carrer de Sant Isidre 33, España</p><p class="text">Tres villas modernistas en el centro de Sitges, con jardín centenario y habitaciones con arte.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/nino-boutique.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/nino-boutique.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/nino-boutique-1-640.webp" alt="Nino Hotel Boutique, foto de su web oficial" width="640" height="360" loading="lazy"></div><figcaption>Foto: Nino Hotel Boutique, ninohotelboutique.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Paraguay</span><span class="tag">Casa urbana</span></div>
-          <h3>Nino Hotel Boutique</h3><p class="ort">Villa Morra, Asunción, Paraguay</p><p class="text">Once suites en una antigua hilandería restaurada, con colección de arte privada y piscina.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Nino Hotel Boutique</h3><p class="ort">Villa Morra, Asunción, Paraguay</p><p class="text">Once suites en una antigua hilandería restaurada, con colección de arte privada y piscina.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/la-mision.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="p100b" data-via="booking-com">
+      <a class="angebot" href="haus/la-mision.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="p100b">
         <figure><div class="kbild"><img src="bilder/la-mision-1-640.webp" alt="La Misión Hotel Boutique, foto de su web oficial" width="640" height="425" loading="lazy"></div><figcaption>Foto: La Misión Hotel Boutique, lamision.com.py</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Paraguay</span><span class="tag">Casa urbana</span></div>
-          <h3>La Misión Hotel Boutique</h3><p class="ort">Eulogio Estigarribia 4990, Asunción, Paraguay</p><p class="text">Hotel boutique de estilo colonial y guaraní, con piscina en la terraza y un paquete romántico propio.</p><p class="preiszeile">Desde 274 USD + IVA <small>· consultado 16.11.2026</small></p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>La Misión Hotel Boutique</h3><p class="ort">Eulogio Estigarribia 4990, Asunción, Paraguay</p><p class="text">Hotel boutique de estilo colonial y guaraní, con piscina en la terraza y un paquete romántico propio.</p><p class="preiszeile">Desde 274 USD + IVA <small>· consultado 16.11.2026</small></p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/gran-hotel-paraguay.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/gran-hotel-paraguay.html" data-land="py" data-tipo="urbana" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/gran-hotel-paraguay-1-640.webp" alt="Gran Hotel del Paraguay, foto de su web oficial" width="640" height="427" loading="lazy"></div><figcaption>Foto: Gran Hotel del Paraguay, granhoteldelparaguay.com.py</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Paraguay</span><span class="tag">Casa urbana</span></div>
-          <h3>Gran Hotel del Paraguay</h3><p class="ort">De la Residenta 906, Asunción, Paraguay</p><p class="text">Hotel histórico con más de cien años, rodeado de un gran jardín con piscina.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Gran Hotel del Paraguay</h3><p class="ort">De la Residenta 906, Asunción, Paraguay</p><p class="text">Hotel histórico con más de cien años, rodeado de un gran jardín con piscina.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
-      <a class="angebot" href="haus/oasis-dream.html" data-land="py" data-tipo="rural" data-adultos="no" data-preis="keine" data-via="booking-com">
+      <a class="angebot" href="haus/oasis-dream.html" data-land="py" data-tipo="rural" data-adultos="no" data-preis="keine">
         <figure><div class="kbild"><img src="bilder/oasis-dream-1-640.webp" alt="Oasis Dream Hotel, foto de su web oficial" width="640" height="660" loading="lazy"></div><figcaption>Foto: Oasis Dream Hotel, oasis-dream.com</figcaption></figure>
         <div class="inhalt"><div class="tags"><span class="tag">Paraguay</span><span class="tag">Hotel rural</span></div>
-          <h3>Oasis Dream Hotel</h3><p class="ort">San Bernardino, lago Ypacaraí, Paraguay</p><p class="text">Hotel pequeño con spa en San Bernardino, más tranquilo que la ciudad, con habitaciones, suites y villas.</p><p class="preiszeile">Precio en la casa</p><p class="via">Vía de socio: Booking.com</p><span class="mehr">Ver detalles ›</span></div>
+          <h3>Oasis Dream Hotel</h3><p class="ort">San Bernardino, lago Ypacaraí, Paraguay</p><p class="text">Hotel pequeño con spa en San Bernardino, más tranquilo que la ciudad, con habitaciones, suites y villas.</p><p class="preiszeile">Precio en la casa</p><span class="mehr">Ver detalles ›</span></div>
       </a>
     </div>
     <p class="leer" hidden>Ninguna casa coincide con este filtro.</p>
